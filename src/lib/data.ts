@@ -253,5 +253,16 @@ export const movies: Movie[] = [
     rating: 8.0,
     imageId: 'dragons-poster',
     videoUrl: 'https://cinecake.xyz/movies/Dragon-2025.mp4',
+  },
+  {
+    id: 'minecraft-le-film',
+    title: 'Minecraft, le film',
+    description: 'Quatre mésadaptés traversent soudainement un portail mystérieux menant à la Surface : un étrange univers cubique qui évolue grâce à l’imagination.',
+    longDescription: 'Quatre mésadaptés traversent soudainement un portail mystérieux menant à la Surface : un étrange univers cubique qui évolue grâce à l’imagination. Pour rentrer chez eux, ils se lancent dans une quête magique avec Steve, un surprenant fabricateur expert. L’aventure les poussera à faire preuve d’audace et à renouer avec les qualités qui',
+    genres: ['Aventure', 'Comédie', 'Familial', 'Fantastique'],
+    year: 2025,
+    rating: 6.4,
+    imageId: 'minecraft-le-film-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Minecraft.mp4',
   }
 ];

@@ -143,6 +143,12 @@
       "description": "Affiche du film Dragons",
       "imageUrl": "https://www.themoviedb.org/t/p/original/515phfKCjq7zBEY2UoslEAoNgnW.jpg",
       "imageHint": "viking dragon"
+    },
+    {
+      "id": "minecraft-le-film-poster",
+      "description": "Affiche du film Minecraft, le film",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/cq9z69AyIXeL2H14bqHE5ukm3M9.jpg",
+      "imageHint": "minecraft game"
     }
   ]
 }
