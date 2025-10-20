@@ -165,5 +165,16 @@ export const movies: Movie[] = [
     rating: 6.7,
     imageId: 'space-jam-nouvelle-ere-poster',
     videoUrl: 'https://cinecake.xyz/movies/Space-Jam-Nouvelle-Ere.mp4',
+  },
+  {
+    id: 'casino-royale',
+    title: 'Casino Royale',
+    description: 'Pour sa première mission, James Bond affronte le tout-puissant banquier privé du terrorisme international, Le Chiffre.',
+    longDescription: 'Pour sa première mission, James Bond affronte le tout-puissant banquier privé du terrorisme international, Le Chiffre. Pour achever de le ruiner et démanteler le plus grand réseau criminel qui soit, Bond doit le battre lors d\'une partie de poker à haut risque au Casino Royale. La très belle Vesper, attachée au Trésor, l\'accompagne afin de veiller à ce',
+    genres: ['Action', 'Aventure', 'Thriller'],
+    year: 2006,
+    rating: 7.6,
+    imageId: 'casino-royale-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Casino-Royale.mp4',
   }
 ];

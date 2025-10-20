@@ -89,6 +89,12 @@
       "description": "Affiche du film Space Jam : Nouvelle Ère",
       "imageUrl": "https://www.themoviedb.org/t/p/original/wyXsGqicx9DoR2W6gaxU74NzTRo.jpg",
       "imageHint": "basketball cartoon"
+    },
+    {
+      "id": "casino-royale-poster",
+      "description": "Affiche du film Casino Royale",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/1ST7phuvQsaAIIkRyAtESZFLMx9.jpg",
+      "imageHint": "james bond"
     }
   ]
 }
