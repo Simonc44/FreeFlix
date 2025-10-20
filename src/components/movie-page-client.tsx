@@ -151,6 +151,8 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
   
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+        
         if (e.key === ' ') {
             e.preventDefault();
             togglePlay();
@@ -268,24 +270,52 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                         onClick={(e) => e.stopPropagation()} // Prevent parent onClick
                     >
                       {/* Progress Bar */}
-                      <Slider
-                        value={[progress]}
-                        onValueChange={handleSeek}
-                        className="w-full h-2 cursor-pointer"
-                      />
+                      <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger className="w-full">
+                                <Slider
+                                    value={[progress]}
+                                    onValueChange={handleSeek}
+                                    className="w-full h-1.5 cursor-pointer"
+                                />
+                            </TooltipTrigger>
+                            <TooltipContent side="top" align="start" className="ml-[-2.5em]">
+                                {formatTime(currentTime)}
+                            </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+
                       
                       {/* Controls Row */}
                       <div className="flex items-center justify-between text-white mt-2">
-                          <div className="flex items-center gap-4">
-                            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={togglePlay}>
-                                {isPlaying ? <Pause className="h-6 w-6" /> : <Play className="h-6 w-6 ml-1 fill-current" />}
-                            </Button>
-                            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={() => handleSkip(-10)}>
-                                <Rewind className="h-6 w-6" />
-                            </Button>
-                            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={() => handleSkip(10)}>
-                                <FastForward className="h-6 w-6" />
-                            </Button>
+                          <div className="flex items-center gap-2">
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={togglePlay}>
+                                            {isPlaying ? <Pause className="h-6 w-6" /> : <Play className="h-6 w-6 ml-1 fill-current" />}
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent>{isPlaying ? 'Pause' : 'Lecture'}</TooltipContent>
+                                </Tooltip>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={() => handleSkip(-10)}>
+                                            <Rewind className="h-6 w-6" />
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent>Reculer de 10s</TooltipContent>
+                                </Tooltip>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={() => handleSkip(10)}>
+                                            <FastForward className="h-6 w-6" />
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent>Avancer de 10s</TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+
                             <div className="flex items-center gap-2 group/volume">
                                 <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={toggleMute}>
                                     {isMuted || volume === 0 ? <VolumeX className="h-6 w-6" /> : volume < 0.5 ? <Volume1 className="h-6 w-6" /> : <Volume2 className="h-6 w-6" />}
@@ -295,13 +325,13 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                                     step={0.1}
                                     value={[isMuted ? 0 : volume]}
                                     onValueChange={handleVolumeChange}
-                                    className="w-24 h-2 cursor-pointer opacity-0 group-hover/volume:opacity-100 transition-opacity"
+                                    className="w-24 h-1.5 cursor-pointer opacity-0 group-hover/volume:opacity-100 transition-opacity"
                                 />
                             </div>
                           </div>
 
-                          <div className="flex items-center gap-4">
-                            <span className="text-sm">{formatTime(currentTime)} / {formatTime(duration)}</span>
+                          <div className="flex items-center gap-2">
+                            <span className="text-sm font-mono">{formatTime(currentTime)} / {formatTime(duration)}</span>
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
@@ -309,6 +339,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                                             {isFullScreen ? <Minimize className="h-6 w-6" /> : <Maximize className="h-6 w-6" />}
                                         </Button>
                                     </TooltipTrigger>
+                                    <TooltipContent>{isFullScreen ? 'Quitter le plein écran' : 'Plein écran'}</TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
                           </div>
@@ -321,3 +352,5 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
     </>
   );
 }
+
+    
