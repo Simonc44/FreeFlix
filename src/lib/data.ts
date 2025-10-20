@@ -275,5 +275,18 @@ export const movies: Movie[] = [
     rating: 7.8,
     imageId: 'f1-le-film-poster',
     videoUrl: 'https://cinecake.xyz/movies/F1-The-Movie.mp4',
+  },
+  {
+    id: 'dune-part-one',
+    title: 'Dune : Première partie',
+    description: "L'histoire de Paul Atreides, jeune homme aussi doué que brillant, voué à connaître un destin hors du commun qui le dépasse totalement. Car, s'il veut préserver l'avenir de sa famille et de son peuple, il devra se rendre sur Dune, la planète la plus dangereuse de l'Univers.",
+    longDescription: "L'histoire de Paul Atreides, jeune homme aussi doué que brillant, voué à connaître un destin hors du commun qui le dépasse totalement. Car, s'il veut préserver l'avenir de sa famille et de son peuple, il devra se rendre sur Dune, la planète la plus dangereuse de l'Univers. Mais aussi la seule à même de fournir la ressource la plus précieuse capable de décupler la puissance de l'humanité.",
+    genres: ['Aventure', 'Science-Fiction'],
+    year: 2021,
+    rating: 7.8,
+    imageId: 'dune-part-one-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Dune-Premiere-partie.mp4',
   }
 ];
+
+    

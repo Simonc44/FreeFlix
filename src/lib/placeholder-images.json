@@ -155,6 +155,12 @@
       "description": "Affiche du film F1® Le Film",
       "imageUrl": "https://www.themoviedb.org/t/p/original/9i5VlOVWAQ8yTyCLNNVXa7hozUu.jpg",
       "imageHint": "f1 racing"
+    },
+    {
+      "id": "dune-part-one-poster",
+      "description": "Affiche du film Dune : Première partie",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/qpyaW4xUPeIiYA5ckg5zAZFHvsb.jpg",
+      "imageHint": "sci-fi desert"
     }
   ]
 }
