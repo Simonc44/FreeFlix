@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { Check, Loader2, Plus, Sparkles, Cast, Play, Pause, Rewind, FastForward, Volume2, Volume1, VolumeX, Maximize, Minimize } from 'lucide-react';
+import { Check, Loader2, Plus, Sparkles, Play, Pause, Rewind, FastForward, Volume2, Volume1, VolumeX, Maximize, Minimize } from 'lucide-react';
 import { useWatchlist } from '@/context/app-provider';
 import type { Movie } from '@/lib/types';
 import { Button } from '@/components/ui/button';
@@ -42,13 +42,6 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const playerRef = useRef<HTMLDivElement>(null);
-  const [isCastSupported, setIsCastSupported] = useState(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined' && 'remote' in document.createElement('video')) {
-       setIsCastSupported(true);
-    }
-  }, []);
 
   const formatTime = (timeInSeconds: number) => {
     const hours = Math.floor(timeInSeconds / 3600);
@@ -83,16 +76,6 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
     });
     setSummary(result.summary);
     setIsLoadingSummary(false);
-  };
-
-  const handleCast = async () => {
-    if (videoRef.current && isCastSupported) {
-      try {
-        await videoRef.current.requestRemotePlayback();
-      } catch (error) {
-        console.error('Error starting remote playback', error);
-      }
-    }
   };
 
   const togglePlay = useCallback(() => {
@@ -321,18 +304,6 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                           <div className="flex items-center gap-4">
                             <span className="text-sm font-mono">{formatTime(currentTime)} / {formatTime(duration)}</span>
                             <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger asChild>
-                                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={handleCast} disabled={!isCastSupported}>
-                                            <Cast className="h-6 w-6" />
-                                        </Button>
-                                    </TooltipTrigger>
-                                    {!isCastSupported && (
-                                        <TooltipContent>
-                                        <p>Cast not supported on this browser</p>
-                                        </TooltipContent>
-                                    )}
-                                </Tooltip>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
                                         <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={toggleFullScreen}>
