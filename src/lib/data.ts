@@ -231,5 +231,16 @@ export const movies: Movie[] = [
     rating: 8.3,
     imageId: 'spider-man-across-the-spider-verse-poster',
     videoUrl: 'https://cinecake.xyz/movies/Spider-Man-Across-The-Spider-Verse.mp4',
+  },
+  {
+    id: 'spider-man-new-generation',
+    title: 'Spider-Man : New Generation',
+    description: 'Spider-Man : New Generation suit les aventures de Miles Morales, un adolescent afro-américain et portoricain qui vit à Brooklyn et s’efforce de s’intégrer dans son nouveau collège à Manhattan.',
+    longDescription: 'Spider-Man : New Generation suit les aventures de Miles Morales, un adolescent afro-américain et portoricain qui vit à Brooklyn et s’efforce de s’intégrer dans son nouveau collège à Manhattan. Mais la vie de Miles se complique quand il se fait mordre par une araignée radioactive et se découvre des super-pouvoirs : il est désormais capable',
+    genres: ['Action', 'Aventure', 'Animation', 'Science-Fiction'],
+    year: 2018,
+    rating: 8.4,
+    imageId: 'spider-man-new-generation-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Spider-Man-New-Generation.mp4',
   }
 ];

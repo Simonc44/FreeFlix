@@ -125,6 +125,12 @@
       "description": "Affiche du film Spider-Man : Across the Spider-Verse",
       "imageUrl": "https://www.themoviedb.org/t/p/original/ydaJsTyrRimSQ1dTf2xvrmJKz5b.jpg",
       "imageHint": "spiderman animation"
+    },
+    {
+      "id": "spider-man-new-generation-poster",
+      "description": "Affiche du film Spider-Man : New Generation",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/7uPGS5CgvIjDcFUhw9HB9qYeDXf.jpg",
+      "imageHint": "spiderman animation"
     }
   ]
 }
