@@ -13,7 +13,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 
 
 type MoviePageClientProps = {
@@ -67,7 +67,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
           <Accordion type="single" collapsible className="w-full mt-4" value={isAccordionOpen ? "item-1" : ""} onValueChange={(value) => setIsAccordionOpen(value === "item-1")}>
             <AccordionItem value="item-1">
                 <div onClick={handleGenerateSummary} className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer py-4">
-                  <AccordionTrigger className="p-0 hover:no-underline justify-start flex-1">
+                  <AccordionTrigger className="p-0 hover:no-underline justify-start">
                       <div className="flex items-center gap-2">
                           {isLoadingSummary ? (
                               <>
@@ -114,6 +114,10 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
       {movie.videoUrl && (
         <Dialog open={isPlayerOpen} onOpenChange={setIsPlayerOpen}>
             <DialogContent className="max-w-4xl h-auto p-0 border-0">
+                <DialogHeader className="sr-only">
+                  <DialogTitle>Playing: {movie.title}</DialogTitle>
+                  <DialogDescription>Video player for the movie {movie.title}.</DialogDescription>
+                </DialogHeader>
                 <div className="relative aspect-video">
                     <video controls autoPlay className="w-full h-full rounded-lg" src={movie.videoUrl}>
                         Your browser does not support the video tag.
