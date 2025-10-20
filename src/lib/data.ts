@@ -13,6 +13,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/F1-The-Movie.mp4',
   },
   {
+    id: 'super-mario-bros-le-film',
+    title: 'Super Mario Bros. le film',
+    description: 'Alors qu’ils tentent de réparer une canalisation souterraine, Mario et son frère Luigi, tous deux plombiers, se retrouvent plongés dans un nouvel univers féerique à travers un mystérieux conduit.',
+    longDescription: 'Alors qu’ils tentent de réparer une canalisation souterraine, Mario et son frère Luigi, tous deux plombiers, se retrouvent plongés dans un nouvel univers féerique à travers un mystérieux conduit. Mais lorsque les deux frères sont séparés, Mario s’engage dans une aventure trépidante pour retrouver Luigi. Dans sa quête, il peut compter sur l’aide du champignon Toad, habitant du Royaume Champignon, et les conseils avisés.',
+    genres: ['Aventure', 'Animation', 'Comédie', 'Familial', 'Fantastique'],
+    year: 2023,
+    rating: 7.6,
+    imageId: 'super-mario-bros-le-film-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Super-Mario-Bros-Le-Film.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',

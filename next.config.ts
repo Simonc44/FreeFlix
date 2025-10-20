@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
         hostname: 'motorstories.fr',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.justwatch.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

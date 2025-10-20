@@ -7,6 +7,12 @@
       "imageHint": "F1 car"
     },
     {
+      "id": "super-mario-bros-le-film-poster",
+      "description": "Affiche du film Super Mario Bros. le film",
+      "imageUrl": "https://images.justwatch.com/backdrop/304694617/s640/super-mario-bros-le-film",
+      "imageHint": "mario luigi"
+    },
+    {
       "id": "cosmic-odyssey-poster",
       "description": "A futuristic spaceship travels through a colorful nebula.",
       "imageUrl": "https://images.unsplash.com/photo-1700862889195-17cdf950b5d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzcGFjZSUyMHNoaXB8ZW58MHx8fHwxNzYwODkyMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
