@@ -24,6 +24,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Super-Mario-Bros-Le-Film.mp4',
   },
   {
+    id: 'mission-impossible-final-reckoning',
+    title: 'Mission : Impossible - The Final Reckoning',
+    description: 'Ethan Hunt se rend à Londres avec son équipe dans l\'espoir de remonter la piste du mystérieux Gabriel.',
+    longDescription: 'Ethan Hunt se rend à Londres avec son équipe dans l\'espoir de remonter la piste du mystérieux Gabriel, qu\'il a affronté deux mois auparavant à bord de l\'Orient-Express et qui détient la clé contrôlant l’intelligence artificielle toute puissante surnommée l\'Entité. Adulée par les uns, redoutée par les autres, l’Entité se distingue par sa capacité à prédire',
+    genres: ['Action', 'Aventure', 'Thriller'],
+    year: 2025,
+    rating: 7.3,
+    imageId: 'mission-impossible-final-reckoning-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Mission-Impossible-The-Final-Reckoning.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',

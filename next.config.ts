@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         hostname: 'www.illuminationstudiosparis.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'fr.web.img5.acsta.net',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
