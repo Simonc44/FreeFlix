@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 import { Check, Loader2, Plus, Play, Pause, Rewind, FastForward, Volume2, Volume1, VolumeX, Maximize, Minimize } from 'lucide-react';
 import { useWatchlist } from '@/context/app-provider';
 import type { Movie } from '@/lib/types';
@@ -16,6 +17,7 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import { Slider } from './ui/slider';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 
 type MoviePageClientProps = {
@@ -42,6 +44,8 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const playerRef = useRef<HTMLDivElement>(null);
+
+  const heroImage = PlaceHolderImages.find((p) => p.id === 'interstellar-hero');
 
   const formatTime = (timeInSeconds: number) => {
     const hours = Math.floor(timeInSeconds / 3600);
@@ -235,12 +239,24 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
       </div>
       {movie.videoUrl && (
         <Dialog open={isPlayerOpen} onOpenChange={setIsPlayerOpen}>
-            <DialogContent className="w-screen h-screen max-w-full p-0 border-0 bg-black">
+            <DialogContent className="w-screen h-screen max-w-full p-0 border-0">
                 <DialogHeader className="sr-only">
                   <DialogTitle>Lecture : {movie.title}</DialogTitle>
                   <DialogDescription>Lecteur vidéo pour le film {movie.title}.</DialogDescription>
                 </DialogHeader>
                 <div ref={playerRef} className="relative w-full h-full group" onClick={togglePlay}>
+                    {heroImage && (
+                        <Image
+                        src={heroImage.imageUrl}
+                        alt={movie.title}
+                        fill
+                        priority
+                        className="object-cover -z-20"
+                        data-ai-hint={heroImage.imageHint}
+                        />
+                    )}
+                    <div className="absolute inset-0 bg-black/50 -z-10" />
+
                     <video 
                         ref={videoRef} 
                         className="w-full h-full" 
@@ -352,5 +368,3 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
     </>
   );
 }
-
-    
