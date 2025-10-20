@@ -79,6 +79,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Interstellar.mp4',
   },
   {
+    id: 'destination-finale-bloodlines',
+    title: 'Destination finale : Bloodlines',
+    description: 'Hantée par un cauchemar terrifiant qui revient sans cesse, Stefanie, étudiante à l’université, rentre chez elle pour retrouver la trace de la seule personne susceptible d’enrayer ce cycle infernal et de sauver ses proches du sort funeste qui les attend…',
+    longDescription: 'Hantée par un cauchemar terrifiant qui revient sans cesse, Stefanie, étudiante à l’université, rentre chez elle pour retrouver la trace de la seule personne susceptible d’enrayer ce cycle infernal et de sauver ses proches du sort funeste qui les attend…',
+    genres: ['Horreur', 'Mystère'],
+    year: 2025,
+    rating: 7.1,
+    imageId: 'destination-finale-bloodlines-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Destination-Finale-Bloodlines.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
