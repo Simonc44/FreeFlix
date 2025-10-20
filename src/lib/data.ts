@@ -123,6 +123,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Gran-Turismo.mp4',
   },
   {
+    id: 'rogue-one-a-star-wars-story',
+    title: 'Rogue One : A Star Wars Story',
+    description: 'Situé entre les épisodes III et IV de la saga Star Wars, le film nous entraîne aux côtés d’individus ordinaires qui, pour rester fidèles à leurs valeurs, vont tenter l’impossible au péril de leur vie.',
+    longDescription: 'Situé entre les épisodes III et IV de la saga Star Wars, le film nous entraîne aux côtés d’individus ordinaires qui, pour rester fidèles à leurs valeurs, vont tenter l’impossible au péril de leur vie. Ils n’avaient pas prévu de devenir des héros, mais dans une époque de plus en plus sombre, ils vont devoir dérober les plans de l’Étoile de la Mort, l’arme de',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2016,
+    rating: 7.5,
+    imageId: 'rogue-one-a-star-wars-story-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Rogue-One-A-Star-Wars-Story.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',

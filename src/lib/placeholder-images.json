@@ -67,6 +67,12 @@
       "imageHint": "racing car"
     },
     {
+      "id": "rogue-one-a-star-wars-story-poster",
+      "description": "Affiche du film Rogue One : A Star Wars Story",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/obsGPyNOAwkQbLRQOHR6a21VT23.jpg",
+      "imageHint": "star wars"
+    },
+    {
       "id": "cosmic-odyssey-poster",
       "description": "A futuristic spaceship travels through a colorful nebula.",
       "imageUrl": "https://images.unsplash.com/photo-1700862889195-17cdf950b5d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzcGFjZSUyMHNoaXB8ZW58MHx8fHwxNzYwODkyMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -111,7 +117,7 @@
     {
       "id": "the-comedian-poster",
       "description": "A lone figure on a stage in front of a microphone and a brick wall.",
-      "imageUrl": "https://images.unsplash.com/photo-1580188928585-0ef5c1a5c4dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGFnZSUyMGNvbWVkeXxlbnwwfHx8fDE3NjA5NzM3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580188928585-0ef5c1a5c4dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGFnZSUyMGNvbWVkeXxlbnwwfHx8fDE3NjA5NzM3NTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "stage comedy"
     },
     {
