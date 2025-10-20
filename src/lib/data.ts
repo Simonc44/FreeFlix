@@ -200,6 +200,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Skyfall.mp4',
   },
   {
+    id: 'zack-snyders-justice-league',
+    title: 'Zack Snyder\'s Justice League',
+    description: 'Bruce Wayne est déterminé à faire en sorte que le sacrifice ultime de Superman ne soit pas vain.',
+    longDescription: 'Bruce Wayne est déterminé à faire en sorte que le sacrifice ultime de Superman ne soit pas vain. Pour cela, avec l\'aide de Diana Prince, il met en place un plan pour recruter une équipe de métahumains afin de protéger le monde d\'une menace apocalyptique imminente. La tâche s\'avère plus difficile qu\'il ne l\'imaginait, car chacune des recrues',
+    genres: ['Action', 'Aventure', 'Fantastique'],
+    year: 2021,
+    rating: 8.1,
+    imageId: 'zack-snyders-justice-league-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Zack-Snyders-Justice-League.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
@@ -324,3 +335,4 @@ export const movies: Movie[] = [
     
 
     
+
