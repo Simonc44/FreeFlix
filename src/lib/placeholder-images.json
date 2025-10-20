@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "cosmic-odyssey-poster",
+      "description": "A futuristic spaceship travels through a colorful nebula.",
+      "imageUrl": "https://images.unsplash.com/photo-1700862889195-17cdf950b5d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzcGFjZSUyMHNoaXB8ZW58MHx8fHwxNzYwODkyMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space ship"
+    },
+    {
+      "id": "neon-shadows-poster",
+      "description": "A detective in a trench coat stands in a rainy, neon-lit city street.",
+      "imageUrl": "https://images.unsplash.com/photo-1573767291321-c0af2eaf5266?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjeWJlcnB1bmslMjBjaXR5fGVufDB8fHx8MTc2MDk1NDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyberpunk city"
+    },
+    {
+      "id": "the-last-kingdom-poster",
+      "description": "A warrior with a sword stands on a cliff overlooking a castle.",
+      "imageUrl": "https://images.unsplash.com/photo-1627732922021-e73df99d192e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYW50YXN5JTIwd2FycmlvcnxlbnwwfHx8fDE3NjA5NzM3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy warrior"
+    },
+    {
+      "id": "echoes-of-time-poster",
+      "description": "A man and a woman from different eras reaching for each other through a swirling portal.",
+      "imageUrl": "https://images.unsplash.com/photo-1707217613102-1bc1544a8905?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0aW1lJTIwdHJhdmVsfGVufDB8fHx8MTc2MDk3Mzc1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "time travel"
+    },
+    {
+      "id": "zero-gravity-poster",
+      "description": "Sleek spaceships racing through an asteroid field.",
+      "imageUrl": "https://images.unsplash.com/photo-1614727190538-626592f1df4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzcGFjZSUyMHJhY2V8ZW58MHx8fHwxNzYwOTY3NTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space race"
+    },
+    {
+      "id": "manhattan-project-poster",
+      "description": "A silhouette of a man running through a shadowy government building.",
+      "imageUrl": "https://images.unsplash.com/photo-1758525589403-1235e5d6c300?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzcHklMjB0aHJpbGxlcnxlbnwwfHx8fDE3NjA5NzM3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spy thriller"
+    },
+    {
+      "id": "sunken-city-poster",
+      "description": "A submersible's lights illuminating ancient ruins deep underwater.",
+      "imageUrl": "https://images.unsplash.com/photo-1602809090819-e0fc8825f88b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx1bmRlcndhdGVyJTIwY2l0eXxlbnwwfHx8fDE3NjA4ODA5MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "underwater city"
+    },
+    {
+      "id": "the-comedian-poster",
+      "description": "A lone figure on a stage in front of a microphone and a brick wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1580188928585-0ef5c1a5c4dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdGFnZSUyMGNvbWVkeXxlbnwwfHx8fDE3NjA5NzM3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stage comedy"
+    },
+    {
+      "id": "mind-heist-poster",
+      "description": "A stylized human head made of glowing, interconnected circuits.",
+      "imageUrl": "https://images.unsplash.com/photo-1575612711678-7e781546adf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMG1pbmR8ZW58MHx8fHwxNzYwOTczNzU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract mind"
+    },
+    {
+      "id": "wildlands-poster",
+      "description": "A person standing in a vast, snowy mountain landscape.",
+      "imageUrl": "https://images.unsplash.com/photo-1535741883953-147fb7bfab3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbm93eSUyMG1vdW50YWluc3xlbnwwfHx8fDE3NjA5NzM3NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "snowy mountains"
+    },
+    {
+      "id": "clockwork-enigma-poster",
+      "description": "Intricate gears and cogs of a clockwork machine.",
+      "imageUrl": "https://images.unsplash.com/photo-1546710237-057a5519a3d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdGVhbXB1bmslMjBnZWFyc3xlbnwwfHx8fDE3NjA5NzI5OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "steampunk gears"
+    },
+    {
+      "id": "red-planet-rebellion-poster",
+      "description": "A crowd of people raising fists in front of a futuristic colony on Mars.",
+      "imageUrl": "https://images.unsplash.com/photo-1710676145623-f212b8673995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXJzJTIwY29sb255fGVufDB8fHx8MTc2MDg4MTUxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mars colony"
+    }
+  ]
 }
