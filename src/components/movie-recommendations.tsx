@@ -41,7 +41,6 @@ export function MovieRecommendations() {
             </>
           ) : (
             <>
-              <Sparkles className="mr-2 h-4 w-4" />
               {hasGenerated ? 'Regenerate' : 'Generate Recommendations'}
             </>
           )}
