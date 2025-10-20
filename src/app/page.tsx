@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Play } from 'lucide-react';
@@ -28,6 +29,8 @@ export default function Home({ searchParams }: { searchParams?: { q?: string } }
   const featuredMovieImage = PlaceHolderImages.find((p) => p.id === featuredMovie.imageId);
   const trendingMovies = movies.slice(1, 7);
   const searchQuery = searchParams?.q;
+
+  const genres = [...new Set(movies.flatMap(movie => movie.genres))];
 
   return (
     <>
@@ -67,22 +70,25 @@ export default function Home({ searchParams }: { searchParams?: { q?: string } }
         </section>
       )}
 
-      <div className="container py-12">
-        {!searchQuery && (
-            <MovieCarousel movies={trendingMovies} title="Tendances actuelles" />
-        )}
-        
-        <div className="py-8">
-            <h2 className="mb-4 text-2xl font-headline font-bold">
-              {searchQuery ? `Résultats pour "${searchQuery}"` : "Tous les films"}
-            </h2>
-            <Suspense fallback={<div>Chargement de la grille...</div>}>
-              <MovieGrid query={searchQuery} />
-            </Suspense>
-        </div>
-        
-        {!searchQuery && (
+      <div className="container py-12 space-y-12">
+        {searchQuery ? (
+           <div className="py-8">
+              <h2 className="mb-4 text-2xl font-headline font-bold">
+                Résultats pour "{searchQuery}"
+              </h2>
+              <Suspense fallback={<div>Chargement de la grille...</div>}>
+                <MovieGrid query={searchQuery} />
+              </Suspense>
+          </div>
+        ) : (
           <>
+            <MovieCarousel movies={trendingMovies} title="Tendances actuelles" />
+
+            {genres.map(genre => {
+                const genreMovies = movies.filter(movie => movie.genres.includes(genre));
+                return <MovieCarousel key={genre} movies={genreMovies} title={genre} />
+            })}
+            
             <div className="my-8 border-t border-dashed" />
             <MovieRecommendations />
           </>
