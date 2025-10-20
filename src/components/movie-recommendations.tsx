@@ -33,7 +33,7 @@ export function MovieRecommendations() {
     <div className="py-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
         <h2 className="text-2xl font-headline font-bold">Recommended For You</h2>
-        <Button onClick={handleGetRecommendations} disabled={isLoading} variant="outline">
+        <Button onClick={handleGetRecommendations} disabled={isLoading} size="lg">
           {isLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
