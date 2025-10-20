@@ -53,7 +53,12 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
   const handleCast = async () => {
     if (videoRef.current) {
       try {
-        await videoRef.current.requestRemotePlayback();
+        if ('requestRemotePlayback' in videoRef.current) {
+            await (videoRef.current as any).requestRemotePlayback();
+        } else {
+            console.error('Remote Playback API is not supported on this browser.');
+            alert('La diffusion n\'est pas prise en charge sur ce navigateur.');
+        }
       } catch (error) {
         console.error('Error starting remote playback', error);
       }
