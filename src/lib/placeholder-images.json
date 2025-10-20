@@ -1,52 +1,16 @@
 {
   "placeholderImages": [
     {
-      "id": "f1-le-film-poster",
-      "description": "Affiche du film F1 avec Brad Pitt",
-      "imageUrl": "https://motorstories.fr/wp-content/uploads/2025/03/Affiche-Film-F1-Brad-Pitt-1160x1451.jpg",
-      "imageHint": "F1 car"
-    },
-    {
-      "id": "super-mario-bros-le-film-poster",
-      "description": "Affiche du film Super Mario Bros. le film",
-      "imageUrl": "https://www.illuminationstudiosparis.com/wp-content/uploads/2022/10/Mario-Bros-Movie-scaled.jpeg",
-      "imageHint": "mario luigi"
-    },
-    {
-      "id": "mission-impossible-final-reckoning-poster",
-      "description": "Affiche du film Mission : Impossible - The Final Reckoning",
-      "imageUrl": "https://fr.web.img5.acsta.net/img/e1/a1/e1a18fbc01bffba459850fdca101d231.jpg",
-      "imageHint": "action mission"
-    },
-    {
-      "id": "superman-poster",
-      "description": "Affiche du film Superman",
-      "imageUrl": "https://www.themoviedb.org/t/p/original/bL1U8TDb2ZiThIBFAdKHOfpv8lk.jpg",
-      "imageHint": "superhero flying"
-    },
-    {
-      "id": "elio-poster",
-      "description": "Affiche du film Elio",
-      "imageUrl": "https://www.themoviedb.org/t/p/original/jaKbruwD7KLlnprsse1zuOm4o2a.jpg",
-      "imageHint": "space boy"
-    },
-    {
-      "id": "mcwalter-poster",
-      "description": "Affiche du film McWalter",
-      "imageUrl": "https://www.themoviedb.org/t/p/original/93XDwOGPFh4HJEMmOSSrWL29tOM.jpg",
-      "imageHint": "action comedy"
-    },
-    {
       "id": "interstellar-poster",
       "description": "Affiche du film Interstellar",
       "imageUrl": "https://www.themoviedb.org/t/p/original/1pnigkWWy8W032o9TKDneBa3eVK.jpg",
       "imageHint": "space movie"
     },
     {
-      "id": "destination-finale-bloodlines-poster",
-      "description": "Affiche du film Destination finale : Bloodlines",
-      "imageUrl": "https://www.themoviedb.org/t/p/original/4uI8C2zcfLWRhZDBgd0oTlZjV9j.jpg",
-      "imageHint": "horror mystery"
+      "id": "the-dark-knight-poster",
+      "description": "Affiche du film The Dark Knight : Le Chevalier noir",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/pyNXnq8QBWoK3b37RS6C3axwUOy.jpg",
+      "imageHint": "batman joker"
     },
     {
       "id": "scream-poster",
@@ -115,10 +79,10 @@
       "imageHint": "superhero team"
     },
     {
-      "id": "the-dark-knight-poster",
-      "description": "Affiche du film The Dark Knight : Le Chevalier noir",
-      "imageUrl": "https://www.themoviedb.org/t/p/original/pyNXnq8QBWoK3b37RS6C3axwUOy.jpg",
-      "imageHint": "batman joker"
+      "id": "shazam-la-rage-des-dieux-poster",
+      "description": "Affiche du film Shazam! La Rage des Dieux",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/iz2V6Wc5eVVBbUqlTIkY4SrS5nW.jpg",
+      "imageHint": "superhero comedy"
     }
   ]
 }
