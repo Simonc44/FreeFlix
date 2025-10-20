@@ -170,9 +170,15 @@
     },
     {
       "id": "lilo-stitch-poster",
-      "description": "Affiche du film Lilo &amp; Stitch",
+      "description": "Affiche du film Lilo & Stitch",
       "imageUrl": "https://www.themoviedb.org/t/p/original/71IjwRa88OJMYJBntId7nn0eFHy.jpg",
       "imageHint": "alien hawaii"
+    },
+    {
+      "id": "dune-part-two-poster",
+      "description": "Affiche du film Dune : Deuxième partie",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/dM2eC02Dq3iMtBZZDFtXSLHfFKJ.jpg",
+      "imageHint": "dune sequel"
     }
   ]
 }

@@ -214,7 +214,7 @@ export const movies: Movie[] = [
     id: 'spider-man-across-the-spider-verse',
     title: 'Spider-Man : Across the Spider-Verse',
     description: 'Après avoir retrouvé Gwen Stacy, Spider-Man, le sympathique héros originaire de Brooklyn, est catapulté à travers le Multivers, où il rencontre une équipe de Spider-Héros chargée d\'en protéger l\'existence.',
-    longDescription: 'Après avoir retrouvé Gwen Stacy, Spider-Man, le sympathique héros originaire de Brooklyn, est catapulté à travers le Multivers, où il rencontre une équipe de Spider-Héros chargée d\'en protéger l\'existence. Mais lorsque les héros s\'opposent sur la façon de gérer une nouvelle menace, Miles se retrouve confronté à eux et doit redéfinir ce que signifie',
+    longDescription: 'Après avoir retrouvé Gwen Stacy, Spider-Man, le sympathique héros originaire de Brooklyn, est catapulté à travers le Multivers, où il rencontre une équipe de Spider-Héros chargée d\'en proteger l\'existence. Mais lorsque les héros s\'opposent sur la façon de gérer une nouvelle menace, Miles se retrouve confronté à eux et doit redéfinir ce que signifie',
     genres: ['Action', 'Aventure', 'Animation', 'Science-Fiction'],
     year: 2023,
     rating: 8.3,
@@ -289,7 +289,7 @@ export const movies: Movie[] = [
   },
   {
     id: 'lilo-stitch',
-    title: 'Lilo &amp; Stitch',
+    title: 'Lilo & Stitch',
     description: "Sur l'île d'Hawaï, une petite fille espiègle nommée Lilo adopte ce qu'elle croit être un chien étrange, qu'elle prénomme Stitch.",
     longDescription: "Sur l'île d'Hawaï, une petite fille espiègle nommée Lilo adopte ce qu'elle croit être un chien étrange, qu'elle prénomme Stitch. Mais Stitch est en réalité une créature extraterrestre créée pour semer le chaos. Malgré son tempérament destructeur, il découvre peu à peu les valeurs de l’amitié, de l’amour et de la famille.",
     genres: ['Aventure', 'Comédie', 'Familial', 'Science-Fiction'],
@@ -297,5 +297,18 @@ export const movies: Movie[] = [
     rating: 7.3,
     imageId: 'lilo-stitch-poster',
     videoUrl: 'https://cinecake.xyz/movies/Lilo-Et-Stitch-2025.mp4',
+  },
+  {
+    id: 'dune-part-two',
+    title: 'Dune : Deuxième partie',
+    description: "Le voyage mythique de Paul Atreides qui s'allie à Chani et aux Fremen dans sa quête de vengeance envers les conspirateurs qui ont anéanti sa famille.",
+    longDescription: "Le voyage mythique de Paul Atreides qui s'allie à Chani et aux Fremen dans sa quête de vengeance envers les conspirateurs qui ont anéanti sa famille. Devant choisir entre l'amour de sa vie et le destin de l'univers, il fera tout pour éviter un terrible futur que lui seul peut prédire.",
+    genres: ['Aventure', 'Science-Fiction'],
+    year: 2024,
+    rating: 8.1,
+    imageId: 'dune-part-two-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Dune-Deuxieme-partie.mp4',
   }
 ];
+
+    
