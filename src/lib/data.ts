@@ -145,6 +145,28 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Gladiator.mp4',
   },
   {
+    id: 'matrix',
+    title: 'Matrix',
+    description: 'Programmeur anonyme dans un service administratif le jour, Thomas Anderson devient Neo la nuit venue.',
+    longDescription: 'Programmeur anonyme dans un service administratif le jour, Thomas Anderson devient Neo la nuit venue. Sous ce pseudonyme, il est l\'un des pirates les plus recherchés du cyber‐espace. À cheval entre deux mondes, Neo est assailli par d\'étranges songes et des messages cryptés provenant d\'un certain Morpheus. Celui‐ci l\'exhorte à aller au‐delà des apparences et à trouver la réponse à la question qui hante constamment ses pensées',
+    genres: ['Action', 'Science-Fiction'],
+    year: 1999,
+    rating: 8.2,
+    imageId: 'matrix-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Matrix.mp4',
+  },
+  {
+    id: 'titanic',
+    title: 'Titanic',
+    description: 'Southampton, 10 avril 1912. Le paquebot le plus grand et le plus moderne du monde, réputé pour son insubmersibilité, le « Titanic », appareille pour son premier voyage.',
+    longDescription: 'Southampton, 10 avril 1912. Le paquebot le plus grand et le plus moderne du monde, réputé pour son insubmersibilité, le « Titanic », appareille pour son premier voyage. Quatre jours plus tard, il heurte un iceberg. À son bord, un artiste pauvre et une grande bourgeoise tombent amoureux.',
+    genres: ['Drame', 'Romance'],
+    year: 1997,
+    rating: 7.9,
+    imageId: 'titanic-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Titanic.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
@@ -265,5 +287,7 @@ export const movies: Movie[] = [
     imageId: 'red-planet-rebellion-poster',
   },
 ];
+
+    
 
     
