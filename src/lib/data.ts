@@ -101,6 +101,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Scream.mp4',
   },
   {
+    id: 'space-jam',
+    title: 'Space Jam',
+    description: 'Bugs Bunny et ses amis font appel à une légende du basket pour défier une équipe d\'extraterrestres sur le terrain.',
+    longDescription: 'Bugs Bunny et ses amis font appel à une légende du basket pour défier une équipe d\'extraterrestres sur le terrain.',
+    genres: ['Aventure', 'Animation', 'Comédie', 'Familial', 'Science-Fiction'],
+    year: 1996,
+    rating: 6.8,
+    imageId: 'space-jam-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Space-Jam.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
