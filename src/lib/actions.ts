@@ -8,7 +8,7 @@ export async function getRecommendationsAction(input: MovieRecommendationsInput)
     const result = await getPersonalizedRecommendations(input);
     return result;
   } catch (error) {
-    console.error('Error getting recommendations:', error);
+    console.error('Erreur lors de l\'obtention des recommandations :', error);
     return { recommendations: [] };
   }
 }
@@ -18,7 +18,7 @@ export async function getSummaryAction(input: GenerateMovieSummaryInput): Promis
     const result = await generateMovieSummary(input);
     return result;
   } catch (error) {
-    console.error('Error generating summary:', error);
-    return { summary: 'Could not generate a summary at this time.' };
+    console.error('Erreur lors de la génération du résumé :', error);
+    return { summary: 'Impossible de générer un résumé pour le moment.' };
   }
 }

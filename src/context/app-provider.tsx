@@ -22,7 +22,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    throw new Error('useAuth doit être utilisé au sein d\'un AuthProvider');
   }
   return context;
 };
@@ -41,7 +41,7 @@ const WatchlistContext = createContext<WatchlistContextType | undefined>(undefin
 export const useWatchlist = () => {
   const context = useContext(WatchlistContext);
   if (!context) {
-    throw new Error('useWatchlist must be used within a WatchlistProvider');
+    throw new Error('useWatchlist doit être utilisé au sein d\'un WatchlistProvider');
   }
   return context;
 };
@@ -66,7 +66,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setWatchlist(JSON.parse(storedWatchlist));
       }
     } catch (error) {
-      console.error('Failed to parse watchlist from localStorage', error);
+      console.error('Échec de l\'analyse de la watchlist depuis localStorage', error);
     }
     setIsLoaded(true);
   }, []);

@@ -2,42 +2,42 @@
 export default function PrivacyPolicyPage() {
   return (
     <div className="container py-12 max-w-4xl">
-      <h1 className="text-4xl font-headline font-bold mb-8">Privacy Policy</h1>
+      <h1 className="text-4xl font-headline font-bold mb-8">Politique de confidentialité</h1>
       <div className="prose prose-invert max-w-none text-muted-foreground">
-        <p className="text-sm">Last updated: {new Date().toLocaleDateString()}</p>
+        <p className="text-sm">Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}</p>
         
         <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Introduction</h2>
         <p>
-          Welcome to FreeFlix. We are committed to protecting your privacy. This Privacy Policy explains how we
-          collect, use, disclose, and safeguard your information when you visit our website. Please read this privacy
-          policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
+          Bienvenue sur FreeFlix. Nous nous engageons à protéger votre vie privée. Cette politique de confidentialité explique comment nous
+          collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site Web. Veuillez lire attentivement cette politique de confidentialité
+          . Si vous n'êtes pas d'accord avec les termes de cette politique de confidentialité, veuillez ne pas accéder au site.
         </p>
 
-        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Collection of Your Information</h2>
+        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Collecte de vos informations</h2>
         <p>
-          We may collect information about you in a variety of ways. The information we may collect on the Site includes personal data, such as your name, shipping address, email address, and telephone number, and demographic information, such as your age, gender, hometown, and interests, that you voluntarily give to us when you register with the Site or when you choose to participate in various activities related to the Site, such as online chat and message boards.
+          Nous pouvons collecter des informations vous concernant de différentes manières. Les informations que nous pouvons collecter sur le site incluent des données personnelles, telles que votre nom, votre adresse de livraison, votre adresse e-mail et votre numéro de téléphone, ainsi que des informations démographiques, telles que votre âge, votre sexe, votre ville natale et vos intérêts, que vous nous fournissez volontairement lorsque vous vous inscrivez sur le site ou lorsque vous choisissez de participer à diverses activités liées au site, telles que le chat en ligne et les forums de discussion.
         </p>
 
-        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Use of Your Information</h2>
+        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Utilisation de vos informations</h2>
         <p>
-          Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Site to:
+          Disposer d'informations précises sur vous nous permet de vous offrir une expérience fluide, efficace et personnalisée. Plus précisément, nous pouvons utiliser les informations collectées à votre sujet via le site pour :
         </p>
         <ul>
-          <li>Create and manage your account.</li>
-          <li>Email you regarding your account or order.</li>
-          <li>Enable user-to-user communications.</li>
-          <li>Fulfill and manage purchases, orders, payments, and other transactions related to the Site.</li>
-          <li>Generate a personal profile about you to make future visits to the Site more personalized.</li>
+          <li>Créer et gérer votre compte.</li>
+          <li>Vous envoyer un e-mail concernant votre compte ou votre commande.</li>
+          <li>Permettre les communications d'utilisateur à utilisateur.</li>
+          <li>Exécuter et gérer les achats, les commandes, les paiements et autres transactions liées au site.</li>
+          <li>Générer un profil personnel vous concernant pour rendre les futures visites sur le site plus personnalisées.</li>
         </ul>
 
-        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Security of Your Information</h2>
+        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Sécurité de vos informations</h2>
         <p>
-          We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse.
+          Nous utilisons des mesures de sécurité administratives, techniques et physiques pour aider à protéger vos informations personnelles. Bien que nous ayons pris des mesures raisonnables pour sécuriser les informations personnelles que vous nous fournissez, veuillez être conscient que malgré nos efforts, aucune mesure de sécurité n'est parfaite ou impénétrable, et aucune méthode de transmission de données ne peut être garantie contre toute interception ou autre type d'utilisation abusive.
         </p>
 
-        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Contact Us</h2>
+        <h2 className="text-2xl font-headline font-semibold mt-8 mb-4 text-foreground">Contactez-nous</h2>
         <p>
-          If you have questions or comments about this Privacy Policy, please contact us at: contact@freeflix.com
+          Si vous avez des questions ou des commentaires sur cette politique de confidentialité, veuillez nous contacter à : contact@freeflix.com
         </p>
       </div>
     </div>

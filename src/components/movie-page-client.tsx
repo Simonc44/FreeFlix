@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { Check, Loader2, Plus, Sparkles, Play, Pause, Rewind, FastForward, Volume2, Volume1, VolumeX, Maximize, Minimize } from 'lucide-react';
+import { Check, Loader2, Plus, Play, Pause, Rewind, FastForward, Volume2, Volume1, VolumeX, Maximize, Minimize } from 'lucide-react';
 import { useWatchlist } from '@/context/app-provider';
 import type { Movie } from '@/lib/types';
 import { Button } from '@/components/ui/button';
@@ -134,7 +134,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
     if (!playerRef.current) return;
     if (!document.fullscreenElement) {
         playerRef.current.requestFullscreen().catch(err => {
-            alert(`Error attempting to enable full-screen mode: ${'\'\''}${err.message}${'\'\''}} (${'\'\''}${err.name}${'\'\''})`);
+            alert(`Erreur lors de l'activation du mode plein écran : ${'\'\''}${err.message}${'\'\''}} (${'\'\''}${err.name}${'\'\''})`);
         });
     } else {
         document.exitFullscreen();
@@ -194,18 +194,17 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                         {isLoadingSummary ? (
                             <>
                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                            Generating AI Summary...
+                            Génération du résumé IA...
                             </>
                         ) : (
                             <>
-                            <Sparkles className="mr-2 h-4 w-4" />
-                            {summary ? 'AI Generated Summary' : 'Generate AI Summary'}
+                            {summary ? 'Résumé généré par IA' : 'Générer un résumé par IA'}
                             </>
                         )}
                     </div>
                 </AccordionTrigger>
               <AccordionContent className="pt-4 text-base text-muted-foreground">
-                {summary || 'Click the button to generate a summary.'}
+                {summary || 'Cliquez sur le bouton pour générer un résumé.'}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -214,7 +213,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
         <div className="w-full md:w-72">
           <div className="flex flex-col gap-3">
             <Button size="lg" className="w-full font-bold text-lg" onClick={() => setIsPlayerOpen(true)} disabled={!movie.videoUrl}>
-              <Play className="mr-2 h-6 w-6 fill-current" /> Play
+              <Play className="mr-2 h-6 w-6 fill-current" /> Lecture
             </Button>
             <Button
               size="lg"
@@ -227,7 +226,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
               ) : (
                 <Plus className="mr-2 h-6 w-6" />
               )}
-              {onWatchlist ? 'On Watchlist' : 'Add to Watchlist'}
+              {onWatchlist ? 'Dans ma liste' : 'Ajouter à ma liste'}
             </Button>
           </div>
         </div>
@@ -236,8 +235,8 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
         <Dialog open={isPlayerOpen} onOpenChange={setIsPlayerOpen}>
             <DialogContent className="w-screen h-screen max-w-full p-0 border-0 bg-black">
                 <DialogHeader className="sr-only">
-                  <DialogTitle>Playing: {movie.title}</DialogTitle>
-                  <DialogDescription>Video player for the movie {movie.title}.</DialogDescription>
+                  <DialogTitle>Lecture : {movie.title}</DialogTitle>
+                  <DialogDescription>Lecteur vidéo pour le film {movie.title}.</DialogDescription>
                 </DialogHeader>
                 <div ref={playerRef} className="relative w-full h-full group" onClick={togglePlay}>
                     <video 
@@ -250,7 +249,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                         onTimeUpdate={handleTimeUpdate}
                         onEnded={() => setIsPlaying(false)}
                     >
-                        Your browser does not support the video tag.
+                        Votre navigateur ne supporte pas la balise vidéo.
                     </video>
 
                     {/* Center Play/Pause Button */}

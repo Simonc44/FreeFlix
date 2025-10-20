@@ -58,7 +58,7 @@ export function MovieCard({ movie, className }: MovieCardProps) {
                     size="icon" 
                     className="rounded-full h-12 w-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm"
                     onClick={handleWatchlistClick}
-                    aria-label={onWatchlist ? "Remove from watchlist" : "Add to watchlist"}
+                    aria-label={onWatchlist ? "Retirer de la liste" : "Ajouter à la liste"}
                     >
                     {onWatchlist ? <Check className="h-6 w-6 text-white" /> : <Plus className="h-6 w-6 text-white" />}
                 </Button>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Loader2, Sparkles } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { getRecommendationsAction } from '@/lib/actions';
 import { Button } from '@/components/ui/button';
 import { movies } from '@/lib/data';
@@ -32,29 +32,29 @@ export function MovieRecommendations() {
   return (
     <div className="py-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-        <h2 className="text-2xl font-headline font-bold">Recommended For You</h2>
-        <Button onClick={handleGetRecommendations} disabled={isLoading} size="lg">
+        <h2 className="text-2xl font-headline font-bold">Recommandé pour vous</h2>
+        <Button onClick={handleGetRecommendations} disabled={isLoading} size="lg" className="font-bold text-lg">
           {isLoading ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Generating...
+              Génération...
             </>
           ) : (
             <>
-              {hasGenerated ? 'Regenerate' : 'Generate Recommendations'}
+              {hasGenerated ? 'Régénérer' : 'Générer des recommandations'}
             </>
           )}
         </Button>
       </div>
       <p className="text-muted-foreground mb-4">
-        Based on your viewing history of: {viewingHistory.join(', ')}.
+        Basé sur votre historique de visionnage : {viewingHistory.join(', ')}.
       </p>
 
-      {isLoading && <div className="text-center p-8">Loading recommendations...</div>}
+      {isLoading && <div className="text-center p-8">Chargement des recommandations...</div>}
       
       {!isLoading && hasGenerated && recommendations.length === 0 && (
         <div className="text-center p-8 bg-card rounded-lg">
-            <p className="text-muted-foreground">No recommendations found. Try again later.</p>
+            <p className="text-muted-foreground">Aucune recommandation trouvée. Réessayez plus tard.</p>
         </div>
       )}
       

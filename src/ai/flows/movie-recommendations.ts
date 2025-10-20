@@ -13,16 +13,16 @@ import {z} from 'genkit';
 
 const MovieRecommendationsInputSchema = z.object({
   viewingHistory: z.array(
-    z.string().describe('The title of a movie the user has watched')
-  ).describe('A list of movies the user has watched in the past.'),
-  numberOfRecommendations: z.number().min(1).max(10).default(5).describe('The number of movie recommendations to generate.')
+    z.string().describe('Le titre d\'un film que l\'utilisateur a regardé')
+  ).describe('Une liste de films que l\'utilisateur a regardés par le passé.'),
+  numberOfRecommendations: z.number().min(1).max(10).default(5).describe('Le nombre de recommandations de films à générer.')
 });
 export type MovieRecommendationsInput = z.infer<typeof MovieRecommendationsInputSchema>;
 
 const MovieRecommendationsOutputSchema = z.object({
   recommendations: z.array(
-    z.string().describe('A recommended movie title based on the viewing history.')
-  ).describe('A list of movie recommendations.')
+    z.string().describe('Un titre de film recommandé basé sur l\'historique de visionnage.')
+  ).describe('Une liste de recommandations de films.')
 });
 export type MovieRecommendationsOutput = z.infer<typeof MovieRecommendationsOutputSchema>;
 
@@ -34,14 +34,14 @@ const movieRecommendationsPrompt = ai.definePrompt({
   name: 'movieRecommendationsPrompt',
   input: {schema: MovieRecommendationsInputSchema},
   output: {schema: MovieRecommendationsOutputSchema},
-  prompt: `You are a movie recommendation expert. Given a user's viewing history, you will provide personalized movie recommendations.
+  prompt: `Vous êtes un expert en recommandation de films. Étant donné l'historique de visionnage d'un utilisateur, vous fournirez des recommandations de films personnalisées.
 
-  Viewing History:
+  Historique de visionnage:
   {{#each viewingHistory}}
   - {{this}}
   {{/each}}
 
-  Please provide {{numberOfRecommendations}} movie recommendations based on the viewing history above. Only respond with the titles of the movies.
+  Veuillez fournir {{numberOfRecommendations}} recommandations de films basées sur l'historique de visionnage ci-dessus. Ne répondez qu'avec les titres des films.
   `
 });
 

@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: 'FreeFlix',
-  description: 'Stream a variety of movies for free.',
+  description: 'Regardez une variété de films gratuitement.',
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="fr" className="dark" suppressHydrationWarning>
       <head>
         <meta name="google" content="notranslate" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -8,12 +8,12 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
           <Clapperboard className="h-6 w-6 text-primary" />
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            Built for entertainment. All rights reserved. &copy; {new Date().getFullYear()} FreeFlix.
+            Conçu pour le divertissement. Tous droits réservés. &copy; {new Date().getFullYear()} FreeFlix.
           </p>
         </div>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <Link href="/privacy-policy" className="transition-colors hover:text-foreground">Privacy Policy</Link>
-            <Link href="/terms-of-service" className="transition-colors hover:text-foreground">Terms of Service</Link>
+            <Link href="/privacy-policy" className="transition-colors hover:text-foreground">Politique de confidentialité</Link>
+            <Link href="/terms-of-service" className="transition-colors hover:text-foreground">Conditions d'utilisation</Link>
         </div>
       </div>
     </footer>

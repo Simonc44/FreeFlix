@@ -56,11 +56,11 @@ export default function Home({ searchParams }: { searchParams?: { q?: string } }
               <Button asChild size="lg">
                 <Link href={`/movies/${featuredMovie.id}`}>
                   <Play className="mr-2 h-5 w-5 fill-current" />
-                  Play
+                  Lecture
                 </Link>
               </Button>
               <Button asChild size="lg" variant="secondary">
-                <Link href={`/movies/${featuredMovie.id}`}>More Info</Link>
+                <Link href={`/movies/${featuredMovie.id}`}>Plus d'infos</Link>
               </Button>
             </div>
           </div>
@@ -69,14 +69,14 @@ export default function Home({ searchParams }: { searchParams?: { q?: string } }
 
       <div className="container py-12">
         {!searchQuery && (
-            <MovieCarousel movies={trendingMovies} title="Trending Now" />
+            <MovieCarousel movies={trendingMovies} title="Tendances actuelles" />
         )}
         
         <div className="py-8">
             <h2 className="mb-4 text-2xl font-headline font-bold">
-              {searchQuery ? `Results for "${searchQuery}"` : "All Movies"}
+              {searchQuery ? `Résultats pour "${searchQuery}"` : "Tous les films"}
             </h2>
-            <Suspense fallback={<div>Loading grid...</div>}>
+            <Suspense fallback={<div>Chargement de la grille...</div>}>
               <MovieGrid query={searchQuery} />
             </Suspense>
         </div>

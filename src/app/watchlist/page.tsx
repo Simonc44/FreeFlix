@@ -12,7 +12,7 @@ export default function WatchlistPage() {
 
   return (
     <div className="container py-12">
-      <h1 className="text-3xl font-headline font-bold mb-8">My Watchlist</h1>
+      <h1 className="text-3xl font-headline font-bold mb-8">Ma Liste de Films</h1>
       {watchlistMovies.length > 0 ? (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {watchlistMovies.map((movie) => (
@@ -22,12 +22,12 @@ export default function WatchlistPage() {
       ) : (
         <div className="flex flex-col items-center justify-center min-h-[40vh] text-center bg-card rounded-lg p-8">
             <Clapperboard className="w-16 h-16 text-muted-foreground mb-4" />
-            <h2 className="text-2xl font-semibold mb-2">Your Watchlist is Empty</h2>
+            <h2 className="text-2xl font-semibold mb-2">Votre liste de films est vide</h2>
             <p className="text-muted-foreground mb-6 max-w-md">
-                Add movies to your watchlist to see them here. Browse our collection and find your next favorite film!
+                Ajoutez des films à votre liste pour les voir ici. Parcourez notre collection et trouvez votre prochain film préféré !
             </p>
             <Button asChild>
-                <Link href="/">Browse Movies</Link>
+                <Link href="/">Parcourir les films</Link>
             </Button>
         </div>
       )}

@@ -52,16 +52,16 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
           <Clapperboard className="h-6 w-6 text-primary" />
-          <span className="hidden font-headline text-2xl font-bold sm:inline-block">
+          <span className="hidden font-headline text-3xl font-bold sm:inline-block">
             FreeFlix
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
           <Link href="/" className="transition-colors hover:text-foreground/80 text-foreground/60">
-            Home
+            Accueil
           </Link>
           <Link href="/watchlist" className="transition-colors hover:text-foreground/80 text-foreground/60">
-            Watchlist
+            Ma Liste
           </Link>
         </nav>
         <div className="flex flex-1 items-center justify-end gap-4">
@@ -69,7 +69,7 @@ export default function Header() {
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
-                placeholder="Search movies..."
+                placeholder="Rechercher des films..."
                 className="pl-9"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -91,13 +91,13 @@ export default function Header() {
                   <div className="flex flex-col space-y-1">
                     <p className="text-sm font-medium leading-none">{user.name}</p>
                     <p className="text-xs leading-none text-muted-foreground">
-                      Welcome back!
+                      Bon retour !
                     </p>
                   </div>
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem onClick={logout}>
-                  Log out
+                  Déconnexion
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

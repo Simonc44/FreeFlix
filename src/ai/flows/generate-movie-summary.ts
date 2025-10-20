@@ -12,13 +12,13 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const GenerateMovieSummaryInputSchema = z.object({
-  movieTitle: z.string().describe('The title of the movie.'),
-  movieDescription: z.string().describe('A detailed description of the movie.'),
+  movieTitle: z.string().describe('Le titre du film.'),
+  movieDescription: z.string().describe('Une description détaillée du film.'),
 });
 export type GenerateMovieSummaryInput = z.infer<typeof GenerateMovieSummaryInputSchema>;
 
 const GenerateMovieSummaryOutputSchema = z.object({
-  summary: z.string().describe('A concise summary of the movie.'),
+  summary: z.string().describe('Un résumé concis du film.'),
 });
 export type GenerateMovieSummaryOutput = z.infer<typeof GenerateMovieSummaryOutputSchema>;
 
@@ -30,7 +30,7 @@ const generateMovieSummaryPrompt = ai.definePrompt({
   name: 'generateMovieSummaryPrompt',
   input: {schema: GenerateMovieSummaryInputSchema},
   output: {schema: GenerateMovieSummaryOutputSchema},
-  prompt: `You are an expert movie summarizer.  Please provide a short, concise summary of the following movie, no more than 50 words.\n\nMovie Title: {{{movieTitle}}}\nMovie Description: {{{movieDescription}}}`, 
+  prompt: `Vous êtes un expert en résumé de films. Veuillez fournir un résumé court et concis du film suivant, pas plus de 50 mots.\n\nTitre du film: {{{movieTitle}}}\nDescription du film: {{{movieDescription}}}`, 
 });
 
 const generateMovieSummaryFlow = ai.defineFlow(
