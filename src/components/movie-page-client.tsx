@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Check, Loader2, Plus, Play, Sparkles, Cast } from 'lucide-react';
 import { useWatchlist } from '@/context/app-provider';
 import type { Movie } from '@/lib/types';
@@ -14,6 +14,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 
 
 type MoviePageClientProps = {
@@ -29,6 +30,15 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isCastSupported, setIsCastSupported] = useState(false);
+
+  useEffect(() => {
+    // The Remote Playback API is only available in secure contexts (HTTPS) and on certain browsers.
+    // We check for its existence on the video element.
+    if (typeof window !== 'undefined' && 'remote' in document.createElement('video')) {
+       setIsCastSupported(true);
+    }
+  }, []);
 
   const handleGenerateSummary = async () => {
     if (summary && !isAccordionOpen) {
@@ -51,14 +61,9 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
   };
 
   const handleCast = async () => {
-    if (videoRef.current) {
+    if (videoRef.current && isCastSupported) {
       try {
-        if ('requestRemotePlayback' in videoRef.current) {
-            await (videoRef.current as any).requestRemotePlayback();
-        } else {
-            console.error('Remote Playback API is not supported on this browser.');
-            alert('La diffusion n\'est pas prise en charge sur ce navigateur.');
-        }
+        await videoRef.current.requestRemotePlayback();
       } catch (error) {
         console.error('Error starting remote playback', error);
       }
@@ -139,9 +144,20 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                         Your browser does not support the video tag.
                     </video>
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={handleCast}>
-                            <Cast className="h-6 w-6" />
-                        </Button>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={handleCast} disabled={!isCastSupported}>
+                                <Cast className="h-6 w-6" />
+                            </Button>
+                          </TooltipTrigger>
+                          {!isCastSupported && (
+                            <TooltipContent>
+                              <p>Cast not supported on this browser</p>
+                            </TooltipContent>
+                          )}
+                        </Tooltip>
+                      </TooltipProvider>
                     </div>
                 </div>
             </DialogContent>
