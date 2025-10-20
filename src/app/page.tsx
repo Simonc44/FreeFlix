@@ -26,7 +26,7 @@ function MovieGrid({ query }: { query?: string }) {
 
 export default function Home({ searchParams }: { searchParams?: { q?: string } }) {
   const featuredMovie = movies[0];
-  const featuredMovieImage = PlaceHolderImages.find((p) => p.id === featuredMovie.imageId);
+  const featuredMovieImage = PlaceHolderImages.find((p) => p.id === 'interstellar-hero');
   const trendingMovies = movies.slice(1, 7);
   const searchQuery = searchParams?.q;
 

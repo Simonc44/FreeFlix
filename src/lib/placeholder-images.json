@@ -1,9 +1,15 @@
 {
   "placeholderImages": [
     {
+      "id": "interstellar-hero",
+      "description": "Image de fond pour la section héros du film Interstellar",
+      "imageUrl": "https://images.unsplash.com/photo-1590372838604-8629c21345d2?q=80&w=2940&auto=format&fit=crop",
+      "imageHint": "space planet"
+    },
+    {
       "id": "interstellar-poster",
       "description": "Affiche du film Interstellar",
-      "imageUrl": "https://images.unsplash.com/photo-1629087595568-5d358455b88b?q=80&w=2940&auto=format&fit=crop",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
       "imageHint": "space movie"
     },
     {
@@ -75,7 +81,7 @@
     {
       "id": "zack-snyders-justice-league-poster",
       "description": "Affiche du film Zack Snyder's Justice League",
-      "imageUrl": "https://www.themoviedb.org/t/p/original/mIFKzh0tDIc6LPMJh88mNZ1yr8s.jpg",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/mIFKzh0tDIc6LPMJh88oNZ1yr8s.jpg",
       "imageHint": "superhero team"
     },
     {
