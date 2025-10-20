@@ -57,6 +57,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Elio.mp4',
   },
   {
+    id: 'mcwalter',
+    title: 'McWalter',
+    description: 'McWalter, légendaire agent d’élite américain est accusé à tort d’une série d’attentats aux quatre coins du globe.',
+    longDescription: 'McWalter, légendaire agent d’élite américain est accusé à tort d’une série d’attentats aux quatre coins du globe. Bien décidé à laver son honneur, il prend la fuite dans le but de résoudre l’énigme, déjouer un complot mondial et sauver la planète…',
+    genres: ['Action', 'Aventure', 'Comédie'],
+    year: 2025,
+    rating: 5.2,
+    imageId: 'mcwalter-poster',
+    videoUrl: 'https://cinecake.xyz/movies/McWalter.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
@@ -177,3 +188,5 @@ export const movies: Movie[] = [
     imageId: 'red-planet-rebellion-poster',
   },
 ];
+
+    
