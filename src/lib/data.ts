@@ -209,5 +209,16 @@ export const movies: Movie[] = [
     rating: 6.6,
     imageId: 'star-wars-episode-i-the-phantom-menace-poster',
     videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Episode-I-La-Menace-Phantom.mp4',
+  },
+  {
+    id: 'saw',
+    title: 'Saw',
+    description: 'Deux hommes se réveillent enchaînés au mur d’une salle de bains. Ils ignorent où ils sont et ne se connaissent pas. Ils savent juste que l’un doit absolument tuer l’autre, sinon dans moins de huit heures, ils seront exécutés tous les deux…',
+    longDescription: 'Deux hommes se réveillent enchaînés au mur d’une salle de bains. Ils ignorent où ils sont et ne se connaissent pas. Ils savent juste que l’un doit absolument tuer l’autre, sinon dans moins de huit heures, ils seront exécutés tous les deux… Voici l’une des situations imaginées par un machiavélique maître criminel qui impose à ses victimes des choix',
+    genres: ['Crime', 'Horreur', 'Mystère'],
+    year: 2004,
+    rating: 7.4,
+    imageId: 'saw-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Saw.mp4',
   }
 ];
