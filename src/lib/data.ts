@@ -189,6 +189,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Oppenheimer.mp4',
   },
   {
+    id: 'skyfall',
+    title: 'Skyfall',
+    description: 'Lorsque la dernière mission de Bond tourne mal, plusieurs agents infiltrés se retrouvent exposés dans le monde entier.',
+    longDescription: 'Lorsque la dernière mission de Bond tourne mal, plusieurs agents infiltrés se retrouvent exposés dans le monde entier. Le MI6 est attaqué, et M est obligée de relocaliser l’Agence. Ces événements ébranlent son autorité, et elle est remise en cause par Mallory, le nouveau président de l’ISC, le comité chargé du renseignement et de la sécurité. Le MI6 est à présent sous le coup d’une double menace, intérieure et extérieure. Il ne reste à',
+    genres: ['Action', 'Aventure', 'Thriller'],
+    year: 2012,
+    rating: 7.3,
+    imageId: 'skyfall-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Skyfall.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
