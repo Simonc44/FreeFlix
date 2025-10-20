@@ -101,6 +101,12 @@
       "description": "Affiche du film Spectre",
       "imageUrl": "https://www.themoviedb.org/t/p/original/AwCpcShhgRqoVPWhOzs4JiI4dlK.jpg",
       "imageHint": "james bond"
+    },
+    {
+      "id": "mourir-peut-attendre-poster",
+      "description": "Affiche du film Mourir peut attendre",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/qseURFLjRBCqFCNCKmS2uwM9IOj.jpg",
+      "imageHint": "james bond"
     }
   ]
 }

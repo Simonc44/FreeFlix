@@ -187,5 +187,16 @@ export const movies: Movie[] = [
     rating: 6.6,
     imageId: 'spectre-poster',
     videoUrl: 'https://cinecake.xyz/movies/Spectre.mp4',
+  },
+  {
+    id: 'mourir-peut-attendre',
+    title: 'Mourir peut attendre',
+    description: 'James Bond a quitté les services secrets et coule des jours heureux en Jamaïque. Mais sa tranquillité est de courte durée...',
+    longDescription: 'James Bond a quitté les services secrets et coule des jours heureux en Jamaïque. Mais sa tranquillité est de courte durée car son vieil ami Felix Leiter de la CIA débarque pour solliciter son aide : il s\'agit de sauver un scientifique qui vient d\'être kidnappé. Mais la mission se révèle bien plus dangereuse que prévu et Bond se retrouve aux trousses d\'un mystérieux ennemi détenant de redoutables armes technologiques…',
+    genres: ['Action', 'Aventure', 'Thriller'],
+    year: 2021,
+    rating: 7.4,
+    imageId: 'mourir-peut-attendre-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Mourir-peut-attendre.mp4',
   }
 ];
