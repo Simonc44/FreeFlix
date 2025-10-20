@@ -198,5 +198,16 @@ export const movies: Movie[] = [
     rating: 7.4,
     imageId: 'mourir-peut-attendre-poster',
     videoUrl: 'https://cinecake.xyz/movies/Mourir-peut-attendre.mp4',
+  },
+  {
+    id: 'star-wars-episode-i-the-phantom-menace',
+    title: 'Star Wars, épisode I - La Menace fantôme',
+    description: 'Il y a bien longtemps, dans une galaxie très lointaine... La République connaît de nombreux tourments : la corruption fait vaciller ses bases, le Sénat s\'embourbe dans des discussions politiques sans fin et de nombreux pouvoirs dissidents commencent à émerger, annonçant la chute d\'un système autrefois paisible.',
+    longDescription: 'Il y a bien longtemps, dans une galaxie très lointaine... La République connaît de nombreux tourments : la corruption fait vaciller ses bases, le Sénat s\'embourbe dans des discussions politiques sans fin et de nombreux pouvoirs dissidents commencent à émerger, annonçant la chute d\'un système autrefois paisible. Puissante et intouchable,',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 1999,
+    rating: 6.6,
+    imageId: 'star-wars-episode-i-the-phantom-menace-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Episode-I-La-Menace-Phantom.mp4',
   }
 ];

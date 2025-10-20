@@ -107,6 +107,12 @@
       "description": "Affiche du film Mourir peut attendre",
       "imageUrl": "https://www.themoviedb.org/t/p/original/qseURFLjRBCqFCNCKmS2uwM9IOj.jpg",
       "imageHint": "james bond"
+    },
+    {
+      "id": "star-wars-episode-i-the-phantom-menace-poster",
+      "description": "Affiche du film Star Wars, épisode I - La Menace fantôme",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/fpEC910v5DrMvZteRNlKzXeHiHY.jpg",
+      "imageHint": "star wars"
     }
   ]
 }
