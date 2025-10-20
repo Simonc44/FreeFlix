@@ -302,7 +302,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                           </div>
 
                           <div className="flex items-center gap-4">
-                            <span className="text-sm font-mono">{formatTime(currentTime)} / {formatTime(duration)}</span>
+                            <span className="text-sm">{formatTime(currentTime)} / {formatTime(duration)}</span>
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
