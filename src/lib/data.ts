@@ -2,6 +2,16 @@ import type { Movie } from '@/lib/types';
 
 export const movies: Movie[] = [
   {
+    id: 'f1-le-film',
+    title: 'F1® Le Film',
+    description: 'Sonny Hayes était le prodige de la F1 des années 90 jusqu’à son terrible accident.',
+    longDescription: 'Sonny Hayes était le prodige de la F1 des années 90 jusqu’à son terrible accident. Trente ans plus tard, devenu un pilote indépendant, il est contacté par Ruben Cervantes, patron d’une écurie en faillite qui le convainc de revenir pour sauver l’équipe et prouver qu’il est toujours le meilleur. Aux côtés de Joshua Pearce, diamant brut prêt à devenir le numéro 1, Sonny réalise vite qu\'en F1, son coéquipier est aussi son plus grand rival.',
+    genres: ['Action', 'Drame'],
+    year: 2025,
+    rating: 8.7,
+    imageId: 'f1-le-film-poster',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
