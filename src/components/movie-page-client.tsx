@@ -30,10 +30,15 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
 
   const handleGenerateSummary = async () => {
-    if (summary) {
-        setIsAccordionOpen(prev => !prev);
+    if (summary && !isAccordionOpen) {
+        setIsAccordionOpen(true);
         return;
-    };
+    }
+    if (summary && isAccordionOpen) {
+        setIsAccordionOpen(false);
+        return;
+    }
+
     setIsLoadingSummary(true);
     setIsAccordionOpen(true);
     const result = await getSummaryAction({
@@ -61,24 +66,23 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
           
           <Accordion type="single" collapsible className="w-full mt-4" value={isAccordionOpen ? "item-1" : ""} onValueChange={(value) => setIsAccordionOpen(value === "item-1")}>
             <AccordionItem value="item-1">
-              <AccordionTrigger 
-                asChild
-                className="p-0 hover:no-underline justify-start"
-              >
-                  <button onClick={handleGenerateSummary} disabled={isLoadingSummary} className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
-                      {isLoadingSummary ? (
-                          <>
-                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                          Generating AI Summary...
-                          </>
-                      ) : (
-                          <>
-                          <Sparkles className="mr-2 h-4 w-4" />
-                          {summary ? 'AI Generated Summary' : 'Generate AI Summary'}
-                          </>
-                      )}
-                  </button>
-              </AccordionTrigger>
+                <div onClick={handleGenerateSummary} className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer py-4">
+                  <AccordionTrigger className="p-0 hover:no-underline justify-start flex-1">
+                      <div className="flex items-center gap-2">
+                          {isLoadingSummary ? (
+                              <>
+                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                              Generating AI Summary...
+                              </>
+                          ) : (
+                              <>
+                              <Sparkles className="mr-2 h-4 w-4" />
+                              {summary ? 'AI Generated Summary' : 'Generate AI Summary'}
+                              </>
+                          )}
+                      </div>
+                  </AccordionTrigger>
+                </div>
               <AccordionContent>
                 {summary || 'Click the button to generate a summary.'}
               </AccordionContent>
