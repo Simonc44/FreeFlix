@@ -90,6 +90,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Destination-Finale-Bloodlines.mp4',
   },
   {
+    id: 'scream',
+    title: 'Scream',
+    description: 'Casey Becker, une belle adolescente, est seule dans la maison familiale. Elle s\'apprête à regarder un film d\'horreur, mais le téléphone sonne.',
+    longDescription: 'Casey Becker, une belle adolescente, est seule dans la maison familiale. Elle s\'apprête à regarder un film d\'horreur, mais le téléphone sonne. Au bout du fil, un serial killer la malmène, et la force à jouer à un jeu terrible : si elle répond mal à ses questions portant sur les films d\'horreur, celui-ci tuera son copain… Sidney Prescott sait qu\'elle est l\'une des',
+    genres: ['Crime', 'Horreur', 'Mystère'],
+    year: 1996,
+    rating: 7.4,
+    imageId: 'scream-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Scream.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
