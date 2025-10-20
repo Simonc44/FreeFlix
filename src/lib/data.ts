@@ -46,6 +46,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Superman-2025.mp4',
   },
   {
+    id: 'elio',
+    title: 'Elio',
+    description: 'Elio, un petit garçon à l\'imagination débordante, qui se retrouve téléporté par inadvertance dans le Communivers...',
+    longDescription: 'Elio, un petit garçon à l\'imagination débordante, qui se retrouve téléporté par inadvertance dans le Communivers, une organisation interplanétaire composée de représentants des galaxies les plus éloignées. Alors que tout l\'univers le considère par erreur comme le chef de la Terre, Elio, loin d\'être préparé à ce genre de pression, va',
+    genres: ['Aventure', 'Animation', 'Comédie', 'Familial', 'Science-Fiction'],
+    year: 2025,
+    rating: 7.0,
+    imageId: 'elio-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Elio.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
