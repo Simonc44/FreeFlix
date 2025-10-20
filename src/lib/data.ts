@@ -178,6 +178,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Top-Gun-Maverick.mp4',
   },
   {
+    id: 'oppenheimer',
+    title: 'Oppenheimer',
+    description: 'En 1942, convaincus que l\'Allemagne hitlérienne est en train de développer une arme nucléaire, les États-Unis initient, dans le plus grand secret, le « Projet Manhattan » destiné à mettre au point la première bombe atomique de l’histoire.',
+    longDescription: 'En 1942, convaincus que l\'Allemagne hitlérienne est en train de développer une arme nucléaire, les États-Unis initient, dans le plus grand secret, le « Projet Manhattan » destiné à mettre au point la première bombe atomique de l’histoire. Pour piloter ce dispositif, le gouvernement engage J. Robert Oppenheimer, brillant physicien, qui sera bientôt surnommé « le père de la bombe atomique ». C\'est dans le laboratoire ultra-',
+    genres: ['Drame', 'Histoire'],
+    year: 2023,
+    rating: 8.1,
+    imageId: 'oppenheimer-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Oppenheimer.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
