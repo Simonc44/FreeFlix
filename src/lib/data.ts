@@ -220,5 +220,16 @@ export const movies: Movie[] = [
     rating: 7.4,
     imageId: 'saw-poster',
     videoUrl: 'https://cinecake.xyz/movies/Saw.mp4',
+  },
+  {
+    id: 'spider-man-across-the-spider-verse',
+    title: 'Spider-Man : Across the Spider-Verse',
+    description: 'Après avoir retrouvé Gwen Stacy, Spider-Man, le sympathique héros originaire de Brooklyn, est catapulté à travers le Multivers, où il rencontre une équipe de Spider-Héros chargée d\'en protéger l\'existence.',
+    longDescription: 'Après avoir retrouvé Gwen Stacy, Spider-Man, le sympathique héros originaire de Brooklyn, est catapulté à travers le Multivers, où il rencontre une équipe de Spider-Héros chargée d\'en protéger l\'existence. Mais lorsque les héros s\'opposent sur la façon de gérer une nouvelle menace, Miles se retrouve confronté à eux et doit redéfinir ce que signifie',
+    genres: ['Action', 'Aventure', 'Animation', 'Science-Fiction'],
+    year: 2023,
+    rating: 8.3,
+    imageId: 'spider-man-across-the-spider-verse-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Spider-Man-Across-The-Spider-Verse.mp4',
   }
 ];

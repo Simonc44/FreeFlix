@@ -119,6 +119,12 @@
       "description": "Affiche du film Saw",
       "imageUrl": "https://www.themoviedb.org/t/p/original/fgYiNJm9v7tSQFa2RA3QOVT66zN.jpg",
       "imageHint": "horror mystery"
+    },
+    {
+      "id": "spider-man-across-the-spider-verse-poster",
+      "description": "Affiche du film Spider-Man : Across the Spider-Verse",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/ydaJsTyrRimSQ1dTf2xvrmJKz5b.jpg",
+      "imageHint": "spiderman animation"
     }
   ]
 }
