@@ -76,7 +76,7 @@ export default function Header() {
               />
             </div>
           </form>
-          {user ? (
+          {user && (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" className="relative h-8 w-8 rounded-full">
@@ -101,11 +101,6 @@ export default function Header() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-          ) : (
-            <Button onClick={login}>
-              <UserIcon className="mr-2 h-4 w-4" />
-              Login
-            </Button>
           )}
         </div>
       </div>
