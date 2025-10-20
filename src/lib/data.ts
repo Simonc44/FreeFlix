@@ -308,7 +308,16 @@ export const movies: Movie[] = [
     rating: 8.1,
     imageId: 'dune-part-two-poster',
     videoUrl: 'https://cinecake.xyz/movies/Dune-Deuxieme-partie.mp4',
+  },
+  {
+    id: 'lamour-ouf',
+    title: 'L\'Amour ouf',
+    description: "Les années 80, dans le nord de la France. Jackie et Clotaire grandissent entre les bancs du lycée et les docks du port. Elle étudie, il traîne. Et puis leurs destins se croisent et c'est l'amour fou.",
+    longDescription: "Les années 80, dans le nord de la France. Jackie et Clotaire grandissent entre les bancs du lycée et les docks du port. Elle étudie, il traîne. Et puis leurs destins se croisent et c'est l'amour fou. La vie s'efforcera de les séparer mais rien n'y fait, ces deux-là sont comme les deux ventricules du même cœur...",
+    genres: ['Crime', 'Drame', 'Romance'],
+    year: 2024,
+    rating: 7.2,
+    imageId: 'lamour-ouf-poster',
+    videoUrl: "https://cinecake.xyz/movies/L'Amour-ouf.mp4",
   }
 ];
-
-    
