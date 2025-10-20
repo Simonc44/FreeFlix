@@ -68,6 +68,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/McWalter.mp4',
   },
   {
+    id: 'interstellar',
+    title: 'Interstellar',
+    description: 'Dans un futur proche, face à une Terre exsangue, un groupe d’explorateurs utilise un vaisseau interstellaire pour franchir un trou de ver permettant de parcourir des distances jusque‐là infranchissables.',
+    longDescription: 'Dans un futur proche, face à une Terre exsangue, un groupe d’explorateurs utilise un vaisseau interstellaire pour franchir un trou de ver permettant de parcourir des distances jusque‐là infranchissables. Leur but : trouver un nouveau foyer pour l’humanité.',
+    genres: ['Aventure', 'Drame', 'Science-Fiction'],
+    year: 2014,
+    rating: 8.5,
+    imageId: 'interstellar-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Interstellar.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
@@ -188,5 +199,3 @@ export const movies: Movie[] = [
     imageId: 'red-planet-rebellion-poster',
   },
 ];
-
-    
