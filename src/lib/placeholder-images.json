@@ -137,6 +137,12 @@
       "description": "Affiche du film Free Guy",
       "imageUrl": "https://www.themoviedb.org/t/p/original/lG7Rv88OANLVbeR6Zymlid1cRuk.jpg",
       "imageHint": "video game"
+    },
+    {
+      "id": "dragons-poster",
+      "description": "Affiche du film Dragons",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/515phfKCjq7zBEY2UoslEAoNgnW.jpg",
+      "imageHint": "viking dragon"
     }
   ]
 }

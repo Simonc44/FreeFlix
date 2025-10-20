@@ -242,5 +242,16 @@ export const movies: Movie[] = [
     rating: 7.5,
     imageId: 'free-guy-poster',
     videoUrl: 'https://cinecake.xyz/movies/Free-Guy.mp4',
+  },
+  {
+    id: 'dragons',
+    title: 'Dragons',
+    description: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception. Fils inventif mais négligé du chef Stoïck la Brute, il bouscule les traditions en se liant d\'amitié avec Krokmou, une Furie nocturne. Leur duo improbable va révéler la vraie nature des dragons et bouleverser les',
+    longDescription: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception. Fils inventif mais négligé du chef Stoïck la Brute, il bouscule les traditions en se liant d\'amitié avec Krokmou, une Furie nocturne. Leur duo improbable va révéler la vraie nature des dragons et bouleverser les',
+    genres: ['Action', 'Familial', 'Fantastique'],
+    year: 2025,
+    rating: 8.0,
+    imageId: 'dragons-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Dragon-2025.mp4',
   }
 ];
