@@ -131,6 +131,12 @@
       "description": "Affiche du film Spider-Man : New Generation",
       "imageUrl": "https://www.themoviedb.org/t/p/original/7uPGS5CgvIjDcFUhw9HB9qYeDXf.jpg",
       "imageHint": "spiderman animation"
+    },
+    {
+      "id": "free-guy-poster",
+      "description": "Affiche du film Free Guy",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/lG7Rv88OANLVbeR6Zymlid1cRuk.jpg",
+      "imageHint": "video game"
     }
   ]
 }

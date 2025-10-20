@@ -123,17 +123,6 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Oppenheimer.mp4',
   },
   {
-    id: 'skyfall',
-    title: 'Skyfall',
-    description: 'Lorsque la dernière mission de Bond tourne mal, plusieurs agents infiltrés se retrouvent exposés dans le monde entier.',
-    longDescription: 'Lorsque la dernière mission de Bond tourne mal, plusieurs agents infiltrés se retroutront exposés dans le monde entier. Le MI6 est attaqué, et M est obligée de relocaliser l’Agence. Ces événements ébranlent son autorité, et elle est remise en cause par Mallory, le nouveau président de l’ISC, le comité chargé du renseignement et de la sécurité. Le MI6 est à présent sous le coup d’une double menace, intérieure et extérieure. Il ne reste à',
-    genres: ['Action', 'Aventure', 'Thriller'],
-    year: 2012,
-    rating: 7.3,
-    imageId: 'skyfall-poster',
-    videoUrl: 'https://cinecake.xyz/movies/Skyfall.mp4',
-  },
-  {
     id: 'zack-snyders-justice-league',
     title: 'Zack Snyder\'s Justice League',
     description: 'Bruce Wayne est déterminé à faire en sorte que le sacrifice ultime de Superman ne soit pas vain.',
@@ -242,5 +231,16 @@ export const movies: Movie[] = [
     rating: 8.4,
     imageId: 'spider-man-new-generation-poster',
     videoUrl: 'https://cinecake.xyz/movies/Spider-Man-New-Generation.mp4',
+  },
+  {
+    id: 'free-guy',
+    title: 'Free Guy',
+    description: 'Un employé de banque, découvrant un jour qu’il n’est en fait qu’un personnage d’arrière-plan dans un jeu vidéo en ligne, décide de devenir le héros de sa propre histoire, quitte à la réécrire.',
+    longDescription: 'Un employé de banque, découvrant un jour qu’il n’est en fait qu’un personnage d’arrière-plan dans un jeu vidéo en ligne, décide de devenir le héros de sa propre histoire, quitte à la réécrire. Évoluant désormais dans un monde qui ne connaît pas de limites, il va tout mettre en œuvre pour le sauver à sa manière, avant qu’il ne soit trop tard…',
+    genres: ['Aventure', 'Comédie', 'Science-Fiction'],
+    year: 2021,
+    rating: 7.5,
+    imageId: 'free-guy-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Free-Guy.mp4',
   }
 ];
