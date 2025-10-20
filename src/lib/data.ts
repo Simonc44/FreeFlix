@@ -154,5 +154,16 @@ export const movies: Movie[] = [
     rating: 6.5,
     imageId: 'shazam-la-rage-des-dieux-poster',
     videoUrl: 'https://cinecake.xyz/movies/Shazam-La-Rage-des-dieux.mp4',
+  },
+  {
+    id: 'space-jam-nouvelle-ere',
+    title: 'Space Jam : Nouvelle Ère',
+    description: 'LeBron et son jeune fils Dom sont retenus prisonniers dans un espace numérique par une intelligence artificielle malveillante.',
+    longDescription: 'LeBron et son jeune fils Dom sont retenus prisonniers dans un espace numérique par une intelligence artificielle malveillante. Le joueur de basket doit ramener son petit garçon sain et sauf chez lui, en faisant triompher Bugs, Lola Bunny et leurs camarades Looney Tunes, réputés pour leur esprit frondeur, face aux champions numérisés de l\'IA.',
+    genres: ['Aventure', 'Animation', 'Comédie', 'Familial', 'Science-Fiction'],
+    year: 2021,
+    rating: 6.7,
+    imageId: 'space-jam-nouvelle-ere-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Space-Jam-Nouvelle-Ere.mp4',
   }
 ];
