@@ -33,15 +33,14 @@ export function MovieCard({ movie, className }: MovieCardProps) {
 
   return (
     <Link href={`/movies/${movie.id}`} className={cn("group block", className)}>
-      <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+      <div className="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105 aspect-[2/3]">
         {placeholder && (
           <Image
             src={placeholder.imageUrl}
             alt={movie.title}
-            width={500}
-            height={750}
+            fill
             data-ai-hint={placeholder.imageHint}
-            className="object-cover w-full h-full"
+            className="object-cover"
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
