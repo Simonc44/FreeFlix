@@ -134,6 +134,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Rogue-One-A-Star-Wars-Story.mp4',
   },
   {
+    id: 'gladiator',
+    title: 'Gladiator',
+    description: 'Le général romain Maximus est le plus fidèle soutien de l\'empereur Marc Aurèle, qu\'il a conduit de victoire en victoire avec une bravoure et un dévouement exemplaires.',
+    longDescription: 'Le général romain Maximus est le plus fidèle soutien de l\'empereur Marc Aurèle, qu\'il a conduit de victoire en victoire avec une bravoure et un dévouement exemplaires. Jaloux du prestige de Maximus, et plus encore de l\'amour que lui voue l\'empereur, le fils de Marc Aurèle, Commode, s\'arroge brutalement le pouvoir, puis ordonne l\'arrestation du général et son exécution. Maximus échappe à ses assassins mais ne peut empêcher le',
+    genres: ['Action', 'Aventure', 'Drame'],
+    year: 2000,
+    rating: 8.2,
+    imageId: 'gladiator-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Gladiator.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
@@ -254,3 +265,5 @@ export const movies: Movie[] = [
     imageId: 'red-planet-rebellion-poster',
   },
 ];
+
+    
