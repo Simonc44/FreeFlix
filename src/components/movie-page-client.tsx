@@ -239,13 +239,13 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
       </div>
       {movie.videoUrl && (
         <Dialog open={isPlayerOpen} onOpenChange={setIsPlayerOpen}>
-            <DialogContent className="w-screen h-screen max-w-full p-0 border-0">
+            <DialogContent className="w-screen h-screen max-w-full p-0 border-0 bg-black">
                 <DialogHeader className="sr-only">
                   <DialogTitle>Lecture : {movie.title}</DialogTitle>
                   <DialogDescription>Lecteur vidéo pour le film {movie.title}.</DialogDescription>
                 </DialogHeader>
                 <div ref={playerRef} className="relative w-full h-full group" onClick={togglePlay}>
-                    {heroImage && (
+                    {heroImage && !isPlaying && (
                         <Image
                         src={heroImage.imageUrl}
                         alt={movie.title}
