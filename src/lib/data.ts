@@ -246,7 +246,7 @@ export const movies: Movie[] = [
   {
     id: 'dragons',
     title: 'Dragons',
-    description: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception. Fils inventif mais négligé du chef Stoïck la Brute, il bouscule les traditions en se liant d\'amitié avec Krokmou, une Furie nocturne. Leur duo improbable va révéler la vraie nature des dragons et bouleverser les',
+    description: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception.',
     longDescription: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception. Fils inventif mais négligé du chef Stoïck la Brute, il bouscule les traditions en se liant d\'amitié avec Krokmou, une Furie nocturne. Leur duo improbable va révéler la vraie nature des dragons et bouleverser les',
     genres: ['Action', 'Familial', 'Fantastique'],
     year: 2025,
@@ -264,5 +264,16 @@ export const movies: Movie[] = [
     rating: 6.4,
     imageId: 'minecraft-le-film-poster',
     videoUrl: 'https://cinecake.xyz/movies/Minecraft.mp4',
+  },
+  {
+    id: 'f1-le-film',
+    title: 'F1® Le Film',
+    description: 'Sonny Hayes était le prodige de la F1 des années 90 jusqu’à son terrible accident. Trente ans plus tard, il doit prouver qu\'il est toujours le meilleur.',
+    longDescription: 'Sonny Hayes était le prodige de la F1 des années 90 jusqu’à son terrible accident. Trente ans plus tard, devenu un pilote indépendant, il est contacté par Ruben Cervantes, patron d’une écurie en faillite qui le convainc de revenir pour sauver l’équipe et prouver qu’il est toujours le meilleur. Aux côtés de Joshua Pearce, diamant brut prêt à devenir le numéro un, Sonny doit affronter ses démons et les dangers de la piste pour atteindre la rédemption.',
+    genres: ['Action', 'Drame'],
+    year: 2025,
+    rating: 7.8,
+    imageId: 'f1-le-film-poster',
+    videoUrl: 'https://cinecake.xyz/movies/F1-The-Movie.mp4',
   }
 ];

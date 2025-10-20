@@ -149,6 +149,12 @@
       "description": "Affiche du film Minecraft, le film",
       "imageUrl": "https://www.themoviedb.org/t/p/original/cq9z69AyIXeL2H14bqHE5ukm3M9.jpg",
       "imageHint": "minecraft game"
+    },
+    {
+      "id": "f1-le-film-poster",
+      "description": "Affiche du film F1® Le Film",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/9i5VlOVWAQ8yTyCLNNVXa7hozUu.jpg",
+      "imageHint": "f1 racing"
     }
   ]
 }
