@@ -112,6 +112,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Space-Jam.mp4',
   },
   {
+    id: 'gran-turismo',
+    title: 'Gran Turismo',
+    description: 'Gran Turismo est inspiré de l\'incroyable histoire vécue d\'une invraisemblable bande d\'infortunés.',
+    longDescription: 'Gran Turismo est inspiré de l\'incroyable histoire vécue d\'une invraisemblable bande d\'infortunés – un amateur de jeu vidéo de classe ouvrière, un ex-pilote d\'autos de course paumé et un idéaliste de l\'industrie du sport motorisé. Ensemble, ils risquent tout pour percer dans le sport le plus prestigieux au monde. Gran Turismo est une captivante',
+    genres: ['Action', 'Aventure', 'Drame'],
+    year: 2023,
+    rating: 7.7,
+    imageId: 'gran-turismo-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Gran-Turismo.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
