@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { movies } from '@/lib/data';
@@ -27,11 +28,11 @@ export default async function MoviePage({ params }: { params: { id: string } }) 
             alt={movie.title}
             fill
             priority
-            className="object-cover -z-10 scale-110 blur-xl"
+            className="object-cover -z-10"
             data-ai-hint={movieImage.imageHint}
           />
         )}
-        <div className="absolute inset-0 bg-background/50" />
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-xl" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
         <div className="container relative pb-12">
           <h1 className="text-4xl md:text-6xl font-headline font-bold max-w-3xl">
