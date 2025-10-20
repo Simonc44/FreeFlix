@@ -52,7 +52,7 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
           <Clapperboard className="h-6 w-6 text-primary" />
-          <span className="hidden font-headline text-xl font-bold sm:inline-block">
+          <span className="hidden font-headline text-2xl font-bold sm:inline-block">
             FreeFlix
           </span>
         </Link>
