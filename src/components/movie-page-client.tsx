@@ -25,9 +25,15 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
 
   const [summary, setSummary] = useState('');
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
 
   const handleGenerateSummary = async () => {
+    if (summary) {
+        setIsAccordionOpen(prev => !prev);
+        return;
+    };
     setIsLoadingSummary(true);
+    setIsAccordionOpen(true);
     const result = await getSummaryAction({
       movieTitle: movie.title,
       movieDescription: movie.longDescription,
@@ -50,10 +56,10 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
           {movie.longDescription}
         </p>
         
-        <Accordion type="single" collapsible className="w-full mt-4">
+        <Accordion type="single" collapsible className="w-full mt-4" value={isAccordionOpen ? "item-1" : ""} onValueChange={(value) => setIsAccordionOpen(value === "item-1")}>
           <AccordionItem value="item-1">
-            <AccordionTrigger>
-                <Button variant="ghost" onClick={handleGenerateSummary} disabled={isLoadingSummary} className='p-0 hover:bg-transparent'>
+            <AccordionTrigger onClick={handleGenerateSummary} disabled={isLoadingSummary} className="p-0 hover:underline-none justify-start gap-2 text-primary hover:text-primary/80">
+                <div className='flex items-center p-0'>
                 {isLoadingSummary ? (
                     <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -65,7 +71,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                     {summary ? 'AI Generated Summary' : 'Generate AI Summary'}
                     </>
                 )}
-                </Button>
+                </div>
             </AccordionTrigger>
             <AccordionContent>
               {summary || 'Click the button to generate a summary.'}
