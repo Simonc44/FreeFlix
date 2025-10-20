@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Check, Loader2, Plus, Play, Sparkles, X, Cast } from 'lucide-react';
+import { Check, Loader2, Plus, Play, Sparkles, Cast } from 'lucide-react';
 import { useWatchlist } from '@/context/app-provider';
 import type { Movie } from '@/lib/types';
 import { Button } from '@/components/ui/button';
@@ -13,7 +13,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 
 type MoviePageClientProps = {
@@ -66,23 +66,23 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
           
           <Accordion type="single" collapsible className="w-full mt-4" value={isAccordionOpen ? "item-1" : ""} onValueChange={(value) => setIsAccordionOpen(value === "item-1")}>
             <AccordionItem value="item-1">
-                <div onClick={handleGenerateSummary} className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer py-4">
-                    <AccordionTrigger className="p-0 hover:no-underline justify-start">
-                        <div className="flex items-center gap-2">
-                            {isLoadingSummary ? (
-                                <>
-                                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                                Generating AI Summary...
-                                </>
-                            ) : (
-                                <>
-                                <Sparkles className="mr-2 h-4 w-4" />
-                                {summary ? 'AI Generated Summary' : 'Generate AI Summary'}
-                                </>
-                            )}
-                        </div>
-                    </AccordionTrigger>
-                </div>
+              <div onClick={handleGenerateSummary} className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer py-4">
+                  <AccordionTrigger className="p-0 hover:no-underline justify-start">
+                    <div className="flex items-center gap-2">
+                        {isLoadingSummary ? (
+                            <>
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                            Generating AI Summary...
+                            </>
+                        ) : (
+                            <>
+                            <Sparkles className="mr-2 h-4 w-4" />
+                            {summary ? 'AI Generated Summary' : 'Generate AI Summary'}
+                            </>
+                        )}
+                    </div>
+                  </AccordionTrigger>
+              </div>
               <AccordionContent>
                 {summary || 'Click the button to generate a summary.'}
               </AccordionContent>
@@ -113,16 +113,16 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
       </div>
       {movie.videoUrl && (
         <Dialog open={isPlayerOpen} onOpenChange={setIsPlayerOpen}>
-            <DialogContent className="max-w-4xl h-auto p-0 border-0 bg-black">
-                <DialogHeader>
-                  <DialogTitle className="sr-only">Playing: {movie.title}</DialogTitle>
-                  <DialogDescription className="sr-only">Video player for the movie {movie.title}.</DialogDescription>
+            <DialogContent className="w-screen h-screen max-w-full p-0 border-0 bg-black">
+                <DialogHeader className="sr-only">
+                  <DialogTitle>Playing: {movie.title}</DialogTitle>
+                  <DialogDescription>Video player for the movie {movie.title}.</DialogDescription>
                 </DialogHeader>
-                <div className="relative aspect-video group">
-                    <video controls autoPlay className="w-full h-full rounded-lg" src={movie.videoUrl}>
+                <div className="relative w-full h-full group">
+                    <video controls autoPlay className="w-full h-full" src={movie.videoUrl}>
                         Your browser does not support the video tag.
                     </video>
-                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
                         <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white">
                             <Cast className="h-6 w-6" />
                         </Button>
