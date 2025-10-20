@@ -151,7 +151,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
     if (!playerRef.current) return;
     if (!document.fullscreenElement) {
         playerRef.current.requestFullscreen().catch(err => {
-            alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+            alert(`Error attempting to enable full-screen mode: ${'\'\''}${err.message}${'\'\''}} (${'\'\''}${err.name}${'\'\''})`);
         });
     } else {
         document.exitFullscreen();
