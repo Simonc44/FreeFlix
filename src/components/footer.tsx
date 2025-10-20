@@ -1,4 +1,5 @@
 import { Clapperboard } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -11,8 +12,8 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>Privacy Policy</span>
-            <span>Terms of Service</span>
+            <Link href="/privacy-policy" className="transition-colors hover:text-foreground">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="transition-colors hover:text-foreground">Terms of Service</Link>
         </div>
       </div>
     </footer>
