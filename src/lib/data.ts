@@ -35,6 +35,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Mission-Impossible-The-Final-Reckoning.mp4',
   },
   {
+    id: 'superman',
+    title: 'Superman',
+    description: 'Superman doit trouver l’équilibre entre ses racines kryptoniennes et son identité humaine...',
+    longDescription: 'Superman doit trouver l’équilibre entre ses racines kryptoniennes et son identité humaine, sous les traits de Clark Kent, originaire de Smallville, dans le Kansas. Il est l’incarnation de la vérité, de la justice et des valeurs américaines et il est animé par une véritable bienveillance dans un monde qui considère cette qualité comme obsolète.',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2025,
+    rating: 7.4,
+    imageId: 'superman-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Superman-2025.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',

@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'fr.web.img5.acsta.net',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.themoviedb.org',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
