@@ -55,7 +55,7 @@ export default function Home({ searchParams }: { searchParams?: { q?: string } }
             <div className="flex gap-4">
               <Button asChild size="lg">
                 <Link href={`/movies/${featuredMovie.id}`}>
-                  <Play className="mr-2 h-5 w-5 fill-primary-foreground" />
+                  <Play className="mr-2 h-5 w-5 fill-current" />
                   Play
                 </Link>
               </Button>

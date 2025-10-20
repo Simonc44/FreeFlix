@@ -114,7 +114,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
         <div className="w-full md:w-64">
           <div className="flex flex-col gap-3">
             <Button size="lg" className="w-full" onClick={() => setIsPlayerOpen(true)} disabled={!movie.videoUrl}>
-              <Play className="mr-2 h-5 w-5 fill-background" /> Play
+              <Play className="mr-2 h-5 w-5 fill-current" /> Play
             </Button>
             <Button
               size="lg"
