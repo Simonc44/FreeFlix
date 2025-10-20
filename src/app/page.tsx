@@ -83,14 +83,16 @@ export default function Home({ searchParams }: { searchParams?: { q?: string } }
         ) : (
           <>
             <MovieCarousel movies={trendingMovies} title="Tendances actuelles" />
+            
+            <div className="my-8 border-t border-dashed" />
+            <Suspense fallback={<div className="text-center p-8">Chargement des recommandations...</div>}>
+                <MovieRecommendations />
+            </Suspense>
 
             {genres.map(genre => {
                 const genreMovies = movies.filter(movie => movie.genres.includes(genre));
                 return <MovieCarousel key={genre} movies={genreMovies} title={genre} />
             })}
-            
-            <div className="my-8 border-t border-dashed" />
-            <MovieRecommendations />
           </>
         )}
       </div>

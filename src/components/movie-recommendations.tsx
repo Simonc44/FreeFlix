@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
 import { getRecommendationsAction } from '@/lib/actions';
 import { Button } from '@/components/ui/button';
 import { movies } from '@/lib/data';
 import type { Movie } from '@/lib/types';
 import { MovieCarousel } from './movie-carousel';
+import { Skeleton } from './ui/skeleton';
 
 // Mock viewing history
 const viewingHistory = [
@@ -17,44 +18,37 @@ const viewingHistory = [
 
 export function MovieRecommendations() {
   const [recommendations, setRecommendations] = useState<Movie[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [hasGenerated, setHasGenerated] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const handleGetRecommendations = async () => {
-    setIsLoading(true);
-    setHasGenerated(true);
-    const result = await getRecommendationsAction({ viewingHistory, numberOfRecommendations: 6 });
-    const recommendedMovies = movies.filter(movie => result.recommendations.includes(movie.title));
-    setRecommendations(recommendedMovies);
-    setIsLoading(false);
-  };
+  useEffect(() => {
+    const handleGetRecommendations = async () => {
+      setIsLoading(true);
+      const result = await getRecommendationsAction({ viewingHistory, numberOfRecommendations: 6 });
+      const recommendedMovies = movies.filter(movie => result.recommendations.includes(movie.title));
+      setRecommendations(recommendedMovies);
+      setIsLoading(false);
+    };
+
+    handleGetRecommendations();
+  }, []);
   
   return (
     <div className="py-8">
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-        <h2 className="text-2xl font-headline font-bold">Recommandé pour vous</h2>
-        <Button onClick={handleGetRecommendations} disabled={isLoading} size="lg" className="font-bold text-lg">
-          {isLoading ? (
-            <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Génération...
-            </>
-          ) : (
-            <>
-              {hasGenerated ? 'Régénérer' : 'Générer des recommandations'}
-            </>
-          )}
-        </Button>
-      </div>
-      <p className="text-muted-foreground mb-4">
-        Basé sur votre historique de visionnage : {viewingHistory.join(', ')}.
-      </p>
-
-      {isLoading && <div className="text-center p-8">Chargement des recommandations...</div>}
+      <h2 className="text-2xl font-headline font-bold mb-4">Recommandé pour vous</h2>
       
-      {!isLoading && hasGenerated && recommendations.length === 0 && (
+      {isLoading && (
+        <div className="w-full">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
+                {[...Array(6)].map((_, i) => (
+                    <Skeleton key={i} className="aspect-[2/3] rounded-md" />
+                ))}
+            </div>
+        </div>
+      )}
+      
+      {!isLoading && recommendations.length === 0 && (
         <div className="text-center p-8 bg-card rounded-lg">
-            <p className="text-muted-foreground">Aucune recommandation trouvée. Réessayez plus tard.</p>
+            <p className="text-muted-foreground">Aucune recommandation trouvée pour le moment.</p>
         </div>
       )}
       
