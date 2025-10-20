@@ -167,6 +167,17 @@ export const movies: Movie[] = [
     videoUrl: 'https://cinecake.xyz/movies/Titanic.mp4',
   },
   {
+    id: 'top-gun-maverick',
+    title: 'Top Gun : Maverick',
+    description: 'Après avoir été l’un des meilleurs pilotes de chasse de l\'Aéronavale américaine pendant plus de trente ans, Pete “Maverick" Mitchell continue à repousser ses limites en tant que pilote d\'essai.',
+    longDescription: 'Après avoir été l’un des meilleurs pilotes de chasse de l\'Aéronavale américaine pendant plus de trente ans, Pete “Maverick" Mitchell continue à repousser ses limites en tant que pilote d\'essai. Il refuse de monter en grade, car cela l’obligerait à renoncer à voler. Il est chargé de former un détachement de jeunes diplômés de l’école Top Gun pour une',
+    genres: ['Action', 'Drame'],
+    year: 2022,
+    rating: 8.2,
+    imageId: 'top-gun-maverick-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Top-Gun-Maverick.mp4',
+  },
+  {
     id: 'cosmic-odyssey',
     title: 'Cosmic Odyssey',
     description: 'A journey through space and time.',
