@@ -176,5 +176,16 @@ export const movies: Movie[] = [
     rating: 7.6,
     imageId: 'casino-royale-poster',
     videoUrl: 'https://cinecake.xyz/movies/Casino-Royale.mp4',
+  },
+  {
+    id: 'spectre',
+    title: 'Spectre',
+    description: 'Un message cryptique surgi du passé entraîne James Bond dans une mission très personnelle à Mexico puis à Rome, où il rencontre Lucia Sciarra, la très belle veuve d’un célèbre criminel.',
+    longDescription: 'Un message cryptique surgi du passé entraîne James Bond dans une mission très personnelle à Mexico puis à Rome, où il rencontre Lucia Sciarra, la très belle veuve d’un célèbre criminel. Bond réussit à infiltrer une réunion secrète révélant une redoutable organisation baptisée Spectre. Pendant ce temps, à Londres, Max Denbigh, le nouveau',
+    genres: ['Action', 'Aventure', 'Thriller'],
+    year: 2015,
+    rating: 6.6,
+    imageId: 'spectre-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Spectre.mp4',
   }
 ];

@@ -95,6 +95,12 @@
       "description": "Affiche du film Casino Royale",
       "imageUrl": "https://www.themoviedb.org/t/p/original/1ST7phuvQsaAIIkRyAtESZFLMx9.jpg",
       "imageHint": "james bond"
+    },
+    {
+      "id": "spectre-poster",
+      "description": "Affiche du film Spectre",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/AwCpcShhgRqoVPWhOzs4JiI4dlK.jpg",
+      "imageHint": "james bond"
     }
   ]
 }
