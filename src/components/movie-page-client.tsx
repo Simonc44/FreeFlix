@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Check, Loader2, Plus, Play, Sparkles, Cast } from 'lucide-react';
 import { useWatchlist } from '@/context/app-provider';
 import type { Movie } from '@/lib/types';
@@ -28,6 +28,7 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
   const [isLoadingSummary, setIsLoadingSummary] = useState(false);
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [isPlayerOpen, setIsPlayerOpen] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleGenerateSummary = async () => {
     if (summary && !isAccordionOpen) {
@@ -47,6 +48,16 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
     });
     setSummary(result.summary);
     setIsLoadingSummary(false);
+  };
+
+  const handleCast = async () => {
+    if (videoRef.current) {
+      try {
+        await videoRef.current.requestRemotePlayback();
+      } catch (error) {
+        console.error('Error starting remote playback', error);
+      }
+    }
   };
 
   return (
@@ -119,11 +130,11 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                   <DialogDescription>Video player for the movie {movie.title}.</DialogDescription>
                 </DialogHeader>
                 <div className="relative w-full h-full group">
-                    <video controls autoPlay className="w-full h-full" src={movie.videoUrl}>
+                    <video ref={videoRef} controls autoPlay className="w-full h-full" src={movie.videoUrl}>
                         Your browser does not support the video tag.
                     </video>
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white">
+                        <Button variant="ghost" size="icon" className="text-white hover:bg-white/20 hover:text-white" onClick={handleCast}>
                             <Cast className="h-6 w-6" />
                         </Button>
                     </div>
