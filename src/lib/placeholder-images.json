@@ -161,6 +161,12 @@
       "description": "Affiche du film Dune : Première partie",
       "imageUrl": "https://www.themoviedb.org/t/p/original/qpyaW4xUPeIiYA5ckg5zAZFHvsb.jpg",
       "imageHint": "sci-fi desert"
+    },
+    {
+      "id": "lilo-stitch-poster",
+      "description": "Affiche du film Lilo &amp; Stitch",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/71IjwRa88OJMYJBntId7nn0eFHy.jpg",
+      "imageHint": "alien hawaii"
     }
   ]
 }

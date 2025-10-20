@@ -286,7 +286,16 @@ export const movies: Movie[] = [
     rating: 7.8,
     imageId: 'dune-part-one-poster',
     videoUrl: 'https://cinecake.xyz/movies/Dune-Premiere-partie.mp4',
+  },
+  {
+    id: 'lilo-stitch',
+    title: 'Lilo &amp; Stitch',
+    description: "Sur l'île d'Hawaï, une petite fille espiègle nommée Lilo adopte ce qu'elle croit être un chien étrange, qu'elle prénomme Stitch.",
+    longDescription: "Sur l'île d'Hawaï, une petite fille espiègle nommée Lilo adopte ce qu'elle croit être un chien étrange, qu'elle prénomme Stitch. Mais Stitch est en réalité une créature extraterrestre créée pour semer le chaos. Malgré son tempérament destructeur, il découvre peu à peu les valeurs de l’amitié, de l’amour et de la famille.",
+    genres: ['Aventure', 'Comédie', 'Familial', 'Science-Fiction'],
+    year: 2025,
+    rating: 7.3,
+    imageId: 'lilo-stitch-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Lilo-Et-Stitch-2025.mp4',
   }
 ];
-
-    
