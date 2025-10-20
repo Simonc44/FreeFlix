@@ -39,6 +39,12 @@ const nextConfig: NextConfig = {
         hostname: 'images.justwatch.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.illuminationstudiosparis.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
