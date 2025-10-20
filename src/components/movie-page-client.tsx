@@ -16,7 +16,6 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import { Slider } from './ui/slider';
-import { cn } from '@/lib/utils';
 
 
 type MoviePageClientProps = {
@@ -193,20 +192,21 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
       <div className="flex flex-col gap-8 md:flex-row md:gap-12">
         <div className="flex-1">
           <div className="flex items-center gap-4 mb-4">
-            {movie.genres.map((genre) => (
-              <Badge key={genre} variant="outline">{genre}</Badge>
-            ))}
             <span className="text-muted-foreground">{movie.year}</span>
             <Badge variant="secondary">{movie.rating.toFixed(1)}</Badge>
+            <div className="flex flex-wrap gap-2">
+                {movie.genres.map((genre) => (
+                  <Badge key={genre} variant="outline">{genre}</Badge>
+                ))}
+            </div>
           </div>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-lg leading-relaxed text-muted-foreground mb-6">
             {movie.longDescription}
           </p>
           
-          <Accordion type="single" collapsible className="w-full mt-4" value={isAccordionOpen ? "item-1" : ""} onValueChange={(value) => setIsAccordionOpen(value === "item-1")}>
+          <Accordion type="single" collapsible className="w-full" value={isAccordionOpen ? "item-1" : ""} onValueChange={(value) => setIsAccordionOpen(value === "item-1")}>
             <AccordionItem value="item-1">
-              <div onClick={handleGenerateSummary} className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer py-4">
-                  <AccordionTrigger className="p-0 hover:no-underline justify-start">
+                <AccordionTrigger onClick={handleGenerateSummary} className="p-0 hover:no-underline flex items-center gap-2 text-primary hover:text-primary/80 transition-colors cursor-pointer">
                     <div className="flex items-center gap-2">
                         {isLoadingSummary ? (
                             <>
@@ -220,30 +220,29 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                             </>
                         )}
                     </div>
-                  </AccordionTrigger>
-              </div>
-              <AccordionContent>
+                </AccordionTrigger>
+              <AccordionContent className="pt-4 text-base text-muted-foreground">
                 {summary || 'Click the button to generate a summary.'}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
 
         </div>
-        <div className="w-full md:w-64">
+        <div className="w-full md:w-72">
           <div className="flex flex-col gap-3">
-            <Button size="lg" className="w-full" onClick={() => setIsPlayerOpen(true)} disabled={!movie.videoUrl}>
-              <Play className="mr-2 h-5 w-5 fill-current" /> Play
+            <Button size="lg" className="w-full font-bold text-lg" onClick={() => setIsPlayerOpen(true)} disabled={!movie.videoUrl}>
+              <Play className="mr-2 h-6 w-6 fill-current" /> Play
             </Button>
             <Button
               size="lg"
               variant="secondary"
-              className="w-full"
+              className="w-full font-bold text-lg"
               onClick={() => onWatchlist ? removeFromWatchlist(movie.id) : addToWatchlist(movie.id)}
             >
               {onWatchlist ? (
-                <Check className="mr-2 h-5 w-5" />
+                <Check className="mr-2 h-6 w-6" />
               ) : (
-                <Plus className="mr-2 h-5 w-5" />
+                <Plus className="mr-2 h-6 w-6" />
               )}
               {onWatchlist ? 'On Watchlist' : 'Add to Watchlist'}
             </Button>
@@ -267,16 +266,15 @@ export function MoviePageClient({ movie }: MoviePageClientProps) {
                         onLoadedMetadata={() => setDuration(videoRef.current?.duration ?? 0)}
                         onTimeUpdate={handleTimeUpdate}
                         onEnded={() => setIsPlaying(false)}
-                        onClick={(e) => e.stopPropagation()} // Prevent parent onClick
                     >
                         Your browser does not support the video tag.
                     </video>
 
                     {/* Center Play/Pause Button */}
-                    <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 pointer-events-none opacity-0 group-hover:opacity-100"
+                    <div className="absolute inset-0 flex items-center justify-center transition-all duration-300 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:scale-110"
                         onClick={(e) => { e.stopPropagation(); togglePlay(); }}>
                          {!isPlaying && (
-                            <Button variant="ghost" size="icon" className="w-24 h-24 rounded-full bg-black/50 text-white hover:bg-black/70 hover:text-white pointer-events-auto">
+                            <Button variant="ghost" size="icon" className="w-24 h-24 rounded-full bg-black/50 text-white hover:bg-black/70 hover:text-white pointer-events-auto backdrop-blur-sm">
                                 <Play className="h-12 w-12 ml-2 fill-current" />
                             </Button>
                         )}
