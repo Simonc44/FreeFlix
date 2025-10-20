@@ -10,9 +10,9 @@ import { MovieCarousel } from './movie-carousel';
 
 // Mock viewing history
 const viewingHistory = [
-  'Cosmic Odyssey',
-  'Neon Shadows',
-  'Mind Heist',
+  'Interstellar',
+  'The Dark Knight : Le Chevalier noir',
+  'Matrix',
 ];
 
 export function MovieRecommendations() {
