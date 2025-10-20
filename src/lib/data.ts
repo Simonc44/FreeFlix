@@ -10,6 +10,7 @@ export const movies: Movie[] = [
     year: 2025,
     rating: 8.7,
     imageId: 'f1-le-film-poster',
+    videoUrl: 'https://cinecake.xyz/movies/F1-The-Movie.mp4',
   },
   {
     id: 'cosmic-odyssey',

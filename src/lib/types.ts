@@ -7,4 +7,5 @@ export type Movie = {
   year: number;
   rating: number;
   imageId: string;
+  videoUrl?: string;
 };
