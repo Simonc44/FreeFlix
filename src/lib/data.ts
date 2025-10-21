@@ -1,3 +1,4 @@
+
 import type { Movie } from '@/lib/types';
 
 export const movies: Movie[] = [
@@ -330,5 +331,18 @@ export const movies: Movie[] = [
     rating: 6.7,
     imageId: 'gladiator-ii-poster',
     videoUrl: 'https://cinecake.xyz/movies/Gladiator-II.mp4'
+  },
+  {
+    id: 'solo-a-star-wars-story',
+    title: 'Solo: A Star Wars Story',
+    description: 'Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie.',
+    longDescription: 'Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie. Au cours de périlleuses aventures dans les bas-fonds d’un monde criminel, Han Solo va faire la connaissance de son imposant futur copilote Chewbacca et croiser la route du charmant escroc Lando Calrissian…',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2018,
+    rating: 6.6,
+    imageId: 'solo-a-star-wars-story-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Solo-A-Star-Wars-Story.mp4'
   }
 ];
+
+    

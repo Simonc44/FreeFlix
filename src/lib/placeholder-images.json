@@ -191,6 +191,12 @@
       "description": "Affiche du film Gladiator II",
       "imageUrl": "https://www.themoviedb.org/t/p/original/6YhfdltefsvLvFOPDfATq1b5hE4.jpg",
       "imageHint": "roman gladiator"
+    },
+    {
+      "id": "solo-a-star-wars-story-poster",
+      "description": "Affiche du film Solo: A Star Wars Story",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/oMCIfJMezZeJvLK124uj4T0BpAy.jpg",
+      "imageHint": "han solo"
     }
   ]
 }
