@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https'
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
@@ -68,7 +68,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self' http://www.freeflix.rf.gd",
+            value: "frame-ancestors 'self' http://www.freeflix.rf.gd https://studio.firebase.google.com",
           },
         ],
       },
