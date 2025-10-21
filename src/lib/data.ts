@@ -247,7 +247,7 @@ export const movies: Movie[] = [
     id: 'dragons',
     title: 'Dragons',
     description: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception.',
-    longDescription: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des générations, Harold fait figure d\'exception. Fils inventif mais négligé du chef Stoïck la Brute, il bouscule les traditions en se liant d\'amitié avec Krokmou, une Furie nocturne. Leur duo improbable va révéler la vraie nature des dragons et bouleverser les',
+    longDescription: 'Sur l\'île accidentée de Berk, où Vikings et dragons se vouent une haine viscérale depuis des generations, Harold fait figure d\'exception. Fils inventif mais négligé du chef Stoïck la Brute, il bouscule les traditions en se liant d\'amitié avec Krokmou, une Furie nocturne. Leur duo improbable va révéler la vraie nature des dragons et bouleverser les',
     genres: ['Action', 'Familial', 'Fantastique'],
     year: 2025,
     rating: 8.0,
@@ -319,5 +319,16 @@ export const movies: Movie[] = [
     rating: 7.2,
     imageId: 'lamour-ouf-poster',
     videoUrl: "https://cinecake.xyz/movies/L'Amour-ouf.mp4",
+  },
+  {
+    id: 'gladiator-ii',
+    title: 'Gladiator II',
+    description: "Des années après avoir assisté à la mort du héros vénéré Maximus, Lucius est forcé d'entrer dans le Colisée lorsque son pays est conquis par des empereurs tyranniques.",
+    longDescription: "Des années après avoir assisté à la mort du héros vénéré Maximus aux mains de son oncle, Lucius est forcé d'entrer dans le Colisée lorsque son pays est conquis par les empereurs tyranniques qui gouvernent désormais Rome d'une main de fer. La rage au cœur et l'avenir de l'Empire en jeu, Lucius doit se tourner vers son passé pour trouver la force et l'honneur de rendre la gloire de Rome à son peuple.",
+    genres: ['Action', 'Aventure', 'Drame'],
+    year: 2024,
+    rating: 6.7,
+    imageId: 'gladiator-ii-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Gladiator-II.mp4'
   }
 ];

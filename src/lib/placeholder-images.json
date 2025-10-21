@@ -185,6 +185,12 @@
       "description": "Affiche du film L'Amour ouf",
       "imageUrl": "https://www.themoviedb.org/t/p/original/6akNNv4KyrguZUiG4uemfV6toVq.jpg",
       "imageHint": "romance drama"
+    },
+    {
+      "id": "gladiator-ii-poster",
+      "description": "Affiche du film Gladiator II",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/6YhfdltefsvLvFOPDfATq1b5hE4.jpg",
+      "imageHint": "roman gladiator"
     }
   ]
 }
