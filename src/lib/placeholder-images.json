@@ -209,6 +209,24 @@
       "description": "Affiche du film Star Wars : Les Derniers Jedi",
       "imageUrl": "https://www.themoviedb.org/t/p/original/pS80gMevVINVyrwEHrILOxqwdAY.jpg",
       "imageHint": "star wars sequel"
+    },
+    {
+      "id": "star-wars-the-force-awakens-poster",
+      "description": "Affiche du film Star Wars : Le Réveil de la Force",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/zKZ1iF1ABqL7a16u6Im8JTQKp7H.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "star-wars-episode-iii-revenge-of-the-sith-poster",
+      "description": "Affiche du film Star Wars, épisode III - La Revanche des Sith",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/2RcBuU8cdxFxCJibbiYCGNLApfz.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "star-wars-episode-ii-attack-of-the-clones-poster",
+      "description": "Affiche du film Star Wars, épisode II - L'Attaque des clones",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/3nqpcTkODCBhuKuDQJ1dtRhgTqZ.jpg",
+      "imageHint": "star wars"
     }
   ]
 }

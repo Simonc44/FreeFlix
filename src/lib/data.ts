@@ -364,6 +364,39 @@ export const movies: Movie[] = [
     rating: 6.8,
     imageId: 'star-wars-the-last-jedi-poster',
     videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Les-Derniers-Jedi.mp4'
+  },
+  {
+    id: 'star-wars-the-force-awakens',
+    title: 'Star Wars : Le Réveil de la Force',
+    description: 'Luke Skywalker est porté disparu. Le pilote Poe est en mission secrète pour le retrouver.',
+    longDescription: 'Il y a bien longtemps, dans une galaxie lointaine… Luke Skywalker est porté disparu. Le pilote Poe est en mission secrète sur une planète pour le retrouver. Au moment où la diabolique armée "Premier Ordre" apparaît en détruisant tout sur son passage, il arrive à cacher la position géographique de l\'ancien maître Jedi dans son droïde BB-8. Capturé',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2015,
+    rating: 7.3,
+    imageId: 'star-wars-the-force-awakens-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Le-Reveil-De-La-Force.mp4'
+  },
+  {
+    id: 'star-wars-episode-iii-revenge-of-the-sith',
+    title: 'Star Wars, épisode III - La Revanche des Sith',
+    description: 'La Guerre des Clones fait rage. Anakin Skywalker, jeune Chevalier Jedi pris entre deux feux, hésite sur la conduite à tenir.',
+    longDescription: 'La Guerre des Clones fait rage. Une franche hostilité oppose désormais le Chancelier Palpatine au Conseil Jedi. Anakin Skywalker, jeune Chevalier Jedi pris entre deux feux, hésite sur la conduite à tenir. Séduit par la promesse d\'un pouvoir sans précédent, tenté par le côté obscur de la Force, il prête allégeance au maléfique Darth Sidious et devient',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2005,
+    rating: 7.5,
+    imageId: 'star-wars-episode-iii-revenge-of-the-sith-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Episode-III-La-Revanche-Des-Sith.mp4'
+  },
+  {
+    id: 'star-wars-episode-ii-attack-of-the-clones',
+    title: 'Star Wars, épisode II - L\'Attaque des clones',
+    description: 'Depuis le blocus de Naboo, la République connaît une crise. Un groupe de dissidents manifeste son mécontentement.',
+    longDescription: 'Depuis le blocus de la planète Naboo par la Fédération du commerce, la République, gouvernée par le Chancelier Palpatine, connaît une véritable crise. Un groupe de dissidents, mené par le sombre Jedi comte Dooku, manifeste son mécontentement envers le fonctionnement du régime. Le Sénat et la population intergalactique se',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2002,
+    rating: 6.6,
+    imageId: 'star-wars-episode-ii-attack-of-the-clones-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Episode-II-Lattaque-Des-Clones.mp4'
   }
 ];
 
