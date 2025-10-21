@@ -18,7 +18,7 @@ import { FormEvent, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function Header() {
-  const { user, login, logout } = useAuth();
+  const { user, logout } = useAuth();
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -102,9 +102,11 @@ export default function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Button onClick={login}>
-              <UserIcon className="mr-2 h-4 w-4" />
-              Connexion
+            <Button asChild>
+              <Link href="/login">
+                <UserIcon className="mr-2 h-4 w-4" />
+                Connexion
+              </Link>
             </Button>
           )}
         </div>
