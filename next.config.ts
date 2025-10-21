@@ -9,19 +9,6 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self' https://*.cloudworkstations.dev https://6000-firebase-studio-1760972340553.cluster-64pjnskmlbaxowh5lzq6i7v4ra.cloudworkstations.dev;",
-          },
-        ],
-      },
-    ];
-  },
   images: {
     remotePatterns: [
       {
