@@ -397,9 +397,32 @@ export const movies: Movie[] = [
     rating: 6.6,
     imageId: 'star-wars-episode-ii-attack-of-the-clones-poster',
     videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Episode-II-Lattaque-Des-Clones.mp4'
+  },
+  {
+    id: 'avengers-endgame',
+    title: 'Avengers : Endgame',
+    description: "Après leur défaite face au Titan Thanos qui dans le film précédent s'est approprié toutes les pierres du Gant de l'infini, les Avengers et les Gardiens de la Galaxie ayant survécu à son claquement de doigts qui a pulvérisé « la moitié de toute forme de vie dans l'Univers », Captain America, Thor, Bruce Banner, Natasha Romanoff, War Machine, Tony Stark,",
+    longDescription: "Après leur défaite face au Titan Thanos qui dans le film précédent s'est approprié toutes les pierres du Gant de l'infini, les Avengers et les Gardiens de la Galaxie ayant survécu à son claquement de doigts qui a pulvérisé « la moitié de toute forme de vie dans l'Univers », Captain America, Thor, Bruce Banner, Natasha Romanoff, War Machine, Tony Stark,",
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2019,
+    rating: 8.2,
+    imageId: 'avengers-endgame-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Avengers-endgame.mp4'
+  },
+  {
+    id: 'avengers-infinity-war',
+    title: 'Avengers : Infinity War',
+    description: 'Les Avengers et leurs alliés devront être prêts à tout sacrifier pour neutraliser le redoutable Thanos avant que son attaque éclair ne conduise à la destruction complète de l’univers.',
+    longDescription: 'Les Avengers et leurs alliés devront être prêts à tout sacrifier pour neutraliser le redoutable Thanos avant que son attaque éclair ne conduise à la destruction complète de l’univers.',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2018,
+    rating: 8.2,
+    imageId: 'avengers-infinity-war-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Avengers-Infinity-War.mp4'
   }
 ];
 
     
 
     
+

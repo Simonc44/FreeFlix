@@ -227,6 +227,18 @@
       "description": "Affiche du film Star Wars, épisode II - L'Attaque des clones",
       "imageUrl": "https://www.themoviedb.org/t/p/original/3nqpcTkODCBhuKuDQJ1dtRhgTqZ.jpg",
       "imageHint": "star wars"
+    },
+    {
+      "id": "avengers-endgame-poster",
+      "description": "Affiche du film Avengers : Endgame",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/wF7jv3x51hXgkl7t5KHePuRjXc8.jpg",
+      "imageHint": "avengers superhero"
+    },
+    {
+      "id": "avengers-infinity-war-poster",
+      "description": "Affiche du film Avengers : Infinity War",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/hSfuKPtyEryeFzapZ8UgZd4aESu.jpg",
+      "imageHint": "avengers superhero"
     }
   ]
 }
