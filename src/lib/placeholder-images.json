@@ -203,6 +203,12 @@
       "description": "Affiche du film Star Wars : L'Ascension de Skywalker",
       "imageUrl": "https://www.themoviedb.org/t/p/original/1pQc75SdFOKpo2AqoL58z5kF3YI.jpg",
       "imageHint": "star wars sequel"
+    },
+    {
+      "id": "star-wars-the-last-jedi-poster",
+      "description": "Affiche du film Star Wars : Les Derniers Jedi",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/pS80gMevVINVyrwEHrILOxqwdAY.jpg",
+      "imageHint": "star wars sequel"
     }
   ]
 }

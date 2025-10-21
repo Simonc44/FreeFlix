@@ -324,7 +324,7 @@ export const movies: Movie[] = [
   {
     id: 'gladiator-ii',
     title: 'Gladiator II',
-    description: "Des années après avoir assisté à la mort du héros vénéré Maximus, Lucius est forcé d'entrer dans le Colisée lorsque son pays est conquis par des empereurs tyranniques.",
+    description: "Des années après avoir assisté à la mort du héros vénéré Maximus, Lucius est forcé d'entrer dans le Colisée lorsque son pays est conquis par des empereurs tyranniques qui gouvernent désormais Rome d'une main de fer.",
     longDescription: "Des années après avoir assisté à la mort du héros vénéré Maximus aux mains de son oncle, Lucius est forcé d'entrer dans le Colisée lorsque son pays est conquis par les empereurs tyranniques qui gouvernent désormais Rome d'une main de fer. La rage au cœur et l'avenir de l'Empire en jeu, Lucius doit se tourner vers son passé pour trouver la force et l'honneur de rendre la gloire de Rome à son peuple.",
     genres: ['Action', 'Aventure', 'Drame'],
     year: 2024,
@@ -353,7 +353,20 @@ export const movies: Movie[] = [
     rating: 6.3,
     imageId: 'star-wars-the-rise-of-skywalker-poster',
     videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Lascension-De-Skywalker.mp4'
+  },
+  {
+    id: 'star-wars-the-last-jedi',
+    title: 'Star Wars : Les Derniers Jedi',
+    description: 'Le Premier Ordre étend son emprise, poussant la Résistance dans ses derniers retranchements.',
+    longDescription: 'Le Premier Ordre étend ses tentacules aux confins de l’univers, poussant la Résistance dans ses retranchements. Il est impossible de se sauver à la vitesse de la lumière avec cet ennemi continuellement aux trousses. Cela n’empêche pas Finn et ses camarades de tenter d’identifier une brèche chez leur adversaire. Pendant ce temps, Rey se trouve',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2017,
+    rating: 6.8,
+    imageId: 'star-wars-the-last-jedi-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Les-Derniers-Jedi.mp4'
   }
 ];
+
+    
 
     
