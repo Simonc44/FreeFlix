@@ -3,62 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Testeur d'intégration - FreeFlix</title>
+  <title>FreeFlix - Preview</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap');
 
     :root {
-      --background: #000000;
+      --background: #121212;
       --foreground: #f8f9fa;
       --primary: hsl(24 95% 53%);
       --muted-foreground: #adb5bd;
-      --card-background: #121212;
-      --border-color: #343a40;
     }
 
-    body {
+    html, body {
       font-family: 'Roboto', sans-serif;
       background-color: var(--background);
       color: var(--foreground);
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      box-sizing: border-box;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden; /* Empêche le défilement de la page de test elle-même */
     }
     
-    header {
-        width: 100%;
-        padding: 1rem 2rem;
-        background-color: var(--card-background);
-        border-bottom: 1px solid var(--border-color);
-        box-sizing: border-box;
-    }
-
-    header h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      color: var(--primary);
-      font-size: 2.5rem;
-      margin: 0;
-      text-align: center;
-      letter-spacing: 1.5px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 95%;
-      margin-top: 2rem;
-      flex-grow: 1;
-    }
-
     object {
       width: 100%;
-      height: 85vh;
-      border: 1px solid var(--border-color);
-      border-radius: 0.5rem;
-      background-color: var(--card-background);
+      height: 100%;
+      border: none;
+      background-color: var(--background);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,15 +51,17 @@
       margin-bottom: 1.5rem;
       opacity: 0.6;
     }
-
-    .fallback-content p {
-      font-size: 1.5rem;
+    
+    .fallback-content .title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
       font-weight: 500;
       color: var(--foreground);
       margin: 0 0 0.5rem 0;
+      letter-spacing: 1px;
     }
     
-    .fallback-content span {
+    .fallback-content .description {
       font-size: 1rem;
       color: var(--muted-foreground);
       max-width: 400px;
@@ -97,23 +70,12 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Viseur de Site FreeFlix</h1>
-  </header>
-  <div class="container">
     <object data="https://9000-firebase-studio-1760972340553.cluster-64pjnskmlbaxowh5lzq6i7v4ra.cloudworkstations.dev/" type="text/html">
       <div class="fallback-content">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
-          <path d="M12 12v9"/>
-          <path d="M16 16l-4-4-4 4"/>
-          <path d="m3 20 1.3-1.3"/>
-          <path d="M5.5 17.5 7 19"/>
-        </svg>
-        <p>Le serveur est en veille</p>
-        <span>Le serveur de développement semble être hors ligne. Veuillez vérifier qu'il est bien démarré pour afficher le site ici.</span>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a6 6 0 0 0 3.5-10.7L12 3" /><path d="M12 21a6 6 0 0 1-3.5-10.7L12 3" /><path d="M10.5 10.5c-1 0-3 1.5-3 3s2 3 3 3" /><path d="m16 16-1-1" /><path d="m19 13-1-1" /><path d="M22 10-1.5-1.5" /><path d="m18 7 1-1" /></svg>
+        <p class="title">Zzz... Serveur en veille</p>
+        <span class="description">Le serveur de développement semble dormir. Veuillez patienter un instant le temps qu'il se réveille.</span>
       </div>
     </object>
-  </div>
 </body>
 </html>
