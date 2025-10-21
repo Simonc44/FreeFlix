@@ -419,10 +419,44 @@ export const movies: Movie[] = [
     rating: 8.2,
     imageId: 'avengers-infinity-war-poster',
     videoUrl: 'https://cinecake.xyz/movies/Avengers-Infinity-War.mp4'
+  },
+  {
+    id: 'harry-potter-and-the-sorcerers-stone',
+    title: 'Harry Potter à l\'école des sorciers',
+    description: 'Orphelin, le jeune Harry Potter peut enfin quitter ses tyranniques oncle et tante Dursley lorsqu\'un curieux messager lui révèle qu\'il est un sorcier.',
+    longDescription: 'Orphelin, le jeune Harry Potter peut enfin quitter ses tyranniques oncle et tante Dursley lorsqu\'un curieux messager lui révèle qu\'il est un sorcier. À 11 ans, Harry va enfin pouvoir intégrer la légendaire école de sorcellerie de Poudlard, y trouver une famille digne de ce nom et des amis, développer ses dons, et préparer son glorieux avenir.',
+    genres: ['Aventure', 'Fantastique'],
+    year: 2001,
+    rating: 7.9,
+    imageId: 'harry-potter-and-the-sorcerers-stone-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Harry-Potter-a-l\'ecole-des-sorciers.mp4'
+  },
+  {
+    id: 'harry-potter-and-the-chamber-of-secrets',
+    title: 'Harry Potter et la Chambre des secrets',
+    description: 'Après de très mauvaises vacances passées chez ses odieux oncle et tante et son affreux cousin, Harry rejoint, non sans mal, l\'École des Sorciers où, avec ses amis Ron et Hermione et l\'aide ponctuelle de nouveaux venus, il parvient à élucider le mystère de la Chambre des secrets, malgré les pièges tendus par ses ennemis et sans le concours de',
+    longDescription: 'Après de très mauvaises vacances passées chez ses odieux oncle et tante et son affreux cousin, Harry rejoint, non sans mal, l\'École des Sorciers où, avec ses amis Ron et Hermione et l\'aide ponctuelle de nouveaux venus, il parvient à élucider le mystère de la Chambre des secrets, malgré les pièges tendus par ses ennemis et sans le concours de',
+    genres: ['Aventure', 'Fantastique'],
+    year: 2002,
+    rating: 7.7,
+    imageId: 'harry-potter-and-the-chamber-of-secrets-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Harry-Potter-et-la-Chambre-des-secrets.mp4'
+  },
+  {
+    id: 'harry-potter-and-the-prisoner-of-azkaban',
+    title: 'Harry Potter et le Prisonnier d\'Azkaban',
+    description: 'Sirius Black, un dangereux sorcier criminel, s’échappe de la sombre prison d’Azkaban avec un seul et unique but : retrouver Harry Potter, en troisième année à l’école de Poudlard.',
+    longDescription: 'Sirius Black, un dangereux sorcier criminel, s’échappe de la sombre prison d’Azkaban avec un seul et unique but : retrouver Harry Potter, en troisième année à l’école de Poudlard. Selon la légende, Black aurait jadis livré les parents du jeune sorcier à leur assassin, Lord Voldemort, et serait maintenant déterminé à tuer Harry…',
+    genres: ['Aventure', 'Fantastique'],
+    year: 2004,
+    rating: 8.0,
+    imageId: 'harry-potter-and-the-prisoner-of-azkaban-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Harry-Potter-et-le-Prisonnier-d\'Azkaban.mp4'
   }
 ];
 
     
 
     
+
 

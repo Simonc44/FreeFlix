@@ -239,6 +239,24 @@
       "description": "Affiche du film Avengers : Infinity War",
       "imageUrl": "https://www.themoviedb.org/t/p/original/hSfuKPtyEryeFzapZ8UgZd4aESu.jpg",
       "imageHint": "avengers superhero"
+    },
+    {
+      "id": "harry-potter-and-the-sorcerers-stone-poster",
+      "description": "Affiche du film Harry Potter à l'école des sorciers",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/fbxQ44VRdM2PVzHSNajUseUteem.jpg",
+      "imageHint": "wizard boy"
+    },
+    {
+      "id": "harry-potter-and-the-chamber-of-secrets-poster",
+      "description": "Affiche du film Harry Potter et la Chambre des secrets",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/8KpHRokGpiaqEGpjYe0rpywtvUx.jpg",
+      "imageHint": "wizard school"
+    },
+    {
+      "id": "harry-potter-and-the-prisoner-of-azkaban-poster",
+      "description": "Affiche du film Harry Potter et le Prisonnier d'Azkaban",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/t4P2079IyK19njHDP2GwQrKdvzd.jpg",
+      "imageHint": "magic prisoner"
     }
   ]
 }
