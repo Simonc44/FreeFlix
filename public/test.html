@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FreeFlix - Preview</title>
+  <title>FreeFlix</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap');
 
@@ -22,7 +22,7 @@
       padding: 0;
       width: 100%;
       height: 100vh;
-      overflow: hidden; /* Empêche le défilement de la page de test elle-même */
+      overflow: hidden;
     }
     
     object {
@@ -45,26 +45,27 @@
       font-family: 'Roboto', sans-serif;
     }
 
-    .fallback-content .icon {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 1.5rem;
-      opacity: 0.6;
+    .fallback-content .logo {
+      width: 96px;
+      height: 96px;
+      color: var(--primary);
+      margin-bottom: 2rem;
     }
     
     .fallback-content .title {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 500;
       color: var(--foreground);
-      margin: 0 0 0.5rem 0;
-      letter-spacing: 1px;
+      margin: 0;
+      letter-spacing: 1.5px;
     }
     
     .fallback-content .description {
       font-size: 1rem;
       color: var(--muted-foreground);
       max-width: 400px;
+      margin-top: 0.5rem;
     }
 
   </style>
@@ -72,9 +73,14 @@
 <body>
     <object data="https://9000-firebase-studio-1760972340553.cluster-64pjnskmlbaxowh5lzq6i7v4ra.cloudworkstations.dev/" type="text/html">
       <div class="fallback-content">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a6 6 0 0 0 3.5-10.7L12 3" /><path d="M12 21a6 6 0 0 1-3.5-10.7L12 3" /><path d="M10.5 10.5c-1 0-3 1.5-3 3s2 3 3 3" /><path d="m16 16-1-1" /><path d="m19 13-1-1" /><path d="M22 10-1.5-1.5" /><path d="m18 7 1-1" /></svg>
-        <p class="title">Zzz... Serveur en veille</p>
-        <span class="description">Le serveur de développement semble dormir. Veuillez patienter un instant le temps qu'il se réveille.</span>
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"></path>
+          <path d="m6.2 5.3 3.1 3.9"></path>
+          <path d="m12.4 3.4 3.1 4"></path>
+          <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path>
+        </svg>
+        <p class="title">Serveur en veille...</p>
+        <span class="description">Le serveur de développement est en cours de démarrage. Veuillez patienter quelques instants.</span>
       </div>
     </object>
 </body>
