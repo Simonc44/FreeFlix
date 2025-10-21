@@ -16,9 +16,10 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Input } from '@/components/ui/input';
 import { FormEvent, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { Skeleton } from './ui/skeleton';
 
 export default function Header() {
-  const { user, logout } = useAuth();
+  const { user, logout, isLoading } = useAuth();
   const [isScrolled, setIsScrolled] = useState(false);
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -41,6 +42,48 @@ export default function Header() {
       params.delete('q');
     }
     router.push(`/?${params.toString()}`);
+  };
+
+  const renderUserAuth = () => {
+    if (isLoading) {
+      return <Skeleton className="h-10 w-28" />;
+    }
+    if (user) {
+      return (
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+              <Avatar className="h-8 w-8">
+                {/* We don't have user avatar from email/pass auth by default */}
+                <AvatarFallback>{user.displayName?.charAt(0) ?? 'U'}</AvatarFallback>
+              </Avatar>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56" align="end" forceMount>
+            <DropdownMenuLabel className="font-normal">
+              <div className="flex flex-col space-y-1">
+                <p className="text-sm font-medium leading-none">{user.displayName}</p>
+                <p className="text-xs leading-none text-muted-foreground">
+                  Bon retour !
+                </p>
+              </div>
+            </DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={logout}>
+              Déconnexion
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      );
+    }
+    return (
+      <Button asChild>
+        <Link href="/login">
+          <UserIcon className="mr-2 h-4 w-4" />
+          Connexion
+        </Link>
+      </Button>
+    );
   };
 
   return (
@@ -76,39 +119,7 @@ export default function Header() {
               />
             </div>
           </form>
-          {user ? (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-                  <Avatar className="h-8 w-8">
-                    <AvatarImage src={user.avatar} alt={user.name} />
-                    <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
-                  </Avatar>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56" align="end" forceMount>
-                <DropdownMenuLabel className="font-normal">
-                  <div className="flex flex-col space-y-1">
-                    <p className="text-sm font-medium leading-none">{user.name}</p>
-                    <p className="text-xs leading-none text-muted-foreground">
-                      Bon retour !
-                    </p>
-                  </div>
-                </DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem onClick={logout}>
-                  Déconnexion
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          ) : (
-            <Button asChild>
-              <Link href="/login">
-                <UserIcon className="mr-2 h-4 w-4" />
-                Connexion
-              </Link>
-            </Button>
-          )}
+          {renderUserAuth()}
         </div>
       </div>
     </header>

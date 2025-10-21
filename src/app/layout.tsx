@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { AppProvider } from "@/context/app-provider";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { FirebaseProvider } from '@/firebase';
 
 export const metadata: Metadata = {
   title: 'FreeFlix',
@@ -25,16 +26,18 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
       </head>
       <body className="antialiased">
-        <AppProvider>
-          <div className="flex flex-col min-h-screen bg-background">
-            <Header />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-          </div>
-          <Toaster />
-        </AppProvider>
+        <FirebaseProvider>
+          <AppProvider>
+            <div className="flex flex-col min-h-screen bg-background">
+              <Header />
+              <main className="flex-grow">
+                {children}
+              </main>
+              <Footer />
+            </div>
+            <Toaster />
+          </AppProvider>
+        </FirebaseProvider>
       </body>
     </html>
   );

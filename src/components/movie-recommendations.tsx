@@ -1,13 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Loader2 } from 'lucide-react';
 import { getRecommendationsAction } from '@/lib/actions';
-import { Button } from '@/components/ui/button';
 import { movies } from '@/lib/data';
 import type { Movie } from '@/lib/types';
 import { MovieCarousel } from './movie-carousel';
 import { Skeleton } from './ui/skeleton';
+import { useAuth } from '@/context/app-provider';
 
 // Mock viewing history
 const viewingHistory = [
@@ -16,21 +15,40 @@ const viewingHistory = [
   'Matrix',
 ];
 
+const guestRecommendations = [
+    'Dune : Première partie',
+    'Gladiator',
+    'Top Gun : Maverick',
+    'Oppenheimer',
+    'Spider-Man : Across the Spider-Verse',
+    'Rogue One : A Star Wars Story'
+];
+
 export function MovieRecommendations() {
+  const { user } = useAuth();
   const [recommendations, setRecommendations] = useState<Movie[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const handleGetRecommendations = async () => {
       setIsLoading(true);
-      const result = await getRecommendationsAction({ viewingHistory, numberOfRecommendations: 6 });
-      const recommendedMovies = movies.filter(movie => result.recommendations.includes(movie.title));
+      let recommendedTitles: string[] = [];
+
+      if (user) {
+        // TODO: In the future, get real viewing history for the user
+        const result = await getRecommendationsAction({ viewingHistory, numberOfRecommendations: 6 });
+        recommendedTitles = result.recommendations;
+      } else {
+        recommendedTitles = guestRecommendations;
+      }
+
+      const recommendedMovies = movies.filter(movie => recommendedTitles.includes(movie.title));
       setRecommendations(recommendedMovies);
       setIsLoading(false);
     };
 
     handleGetRecommendations();
-  }, []);
+  }, [user]);
   
   return (
     <div className="py-8">

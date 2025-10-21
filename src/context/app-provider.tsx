@@ -4,17 +4,16 @@ import type { ReactNode } from 'react';
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import type { Movie } from '@/lib/types';
 import { movies } from '@/lib/data';
+import { useUser, FirebaseUser } from '@/firebase/auth/use-user';
+import { getAuth, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 
 // Auth Context
-type User = {
-  name: string;
-  avatar: string;
-};
-
 type AuthContextType = {
-  user: User | null;
-  login: () => void;
-  logout: () => void;
+  user: FirebaseUser | null;
+  isLoading: boolean;
+  login: (email: string, pass: string) => Promise<any>;
+  signup: (name: string, email: string, pass: string) => Promise<any>;
+  logout: () => Promise<void>;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -22,7 +21,7 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth doit être utilisé au sein d\'un AuthProvider');
+    throw new Error("useAuth doit être utilisé au sein d'un AuthProvider");
   }
   return context;
 };
@@ -41,19 +40,30 @@ const WatchlistContext = createContext<WatchlistContextType | undefined>(undefin
 export const useWatchlist = () => {
   const context = useContext(WatchlistContext);
   if (!context) {
-    throw new Error('useWatchlist doit être utilisé au sein d\'un WatchlistProvider');
+    throw new Error("useWatchlist doit être utilisé au sein d'un WatchlistProvider");
   }
   return context;
 };
 
-
 // App Provider
 export function AppProvider({ children }: { children: ReactNode }) {
   // Auth State
-  const [user, setUser] = useState<User | null>(null);
+  const { user, isLoading } = useUser();
+  const auth = getAuth();
   
-  const login = () => setUser({ name: 'Alex', avatar: 'https://i.pravatar.cc/150?u=a042581f4e29026704d' });
-  const logout = () => setUser(null);
+  const login = (email: string, pass: string) => {
+    return signInWithEmailAndPassword(auth, email, pass);
+  };
+  
+  const signup = async (name: string, email: string, pass: string) => {
+    const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
+    await updateProfile(userCredential.user, { displayName: name });
+    return userCredential;
+  };
+  
+  const logout = () => {
+    return signOut(auth);
+  };
 
   // Watchlist State
   const [watchlist, setWatchlist] = useState<string[]>([]);
@@ -66,7 +76,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setWatchlist(JSON.parse(storedWatchlist));
       }
     } catch (error) {
-      console.error('Échec de l\'analyse de la watchlist depuis localStorage', error);
+      console.error("Échec de l'analyse de la watchlist depuis localStorage", error);
     }
     setIsLoaded(true);
   }, []);
@@ -94,7 +104,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [watchlist]);
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, isLoading, login, signup, logout }}>
       <WatchlistContext.Provider value={{ watchlist, addToWatchlist, removeFromWatchlist, isInWatchlist, getWatchlistMovies }}>
         {children}
       </WatchlistContext.Provider>
