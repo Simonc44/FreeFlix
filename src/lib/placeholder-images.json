@@ -197,6 +197,12 @@
       "description": "Affiche du film Solo: A Star Wars Story",
       "imageUrl": "https://www.themoviedb.org/t/p/original/oMCIfJMezZeJvLK124uj4T0BpAy.jpg",
       "imageHint": "han solo"
+    },
+    {
+      "id": "star-wars-the-rise-of-skywalker-poster",
+      "description": "Affiche du film Star Wars : L'Ascension de Skywalker",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/1pQc75SdFOKpo2AqoL58z5kF3YI.jpg",
+      "imageHint": "star wars sequel"
     }
   ]
 }

@@ -336,12 +336,23 @@ export const movies: Movie[] = [
     id: 'solo-a-star-wars-story',
     title: 'Solo: A Star Wars Story',
     description: 'Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie.',
-    longDescription: 'Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie. Au cours de périlleuses aventures dans les bas-fonds d’un monde criminel, Han Solo va faire la connaissance de son imposant futur copilote Chewbacca et croiser la route du charmant escroc Lando Calrissian…',
+    longDescription: 'Embarquez à bord du Faucon Millenium et partez à l’aventure en compagnie du plus célèbre vaurien de la galaxie. Au cours de périlleuses aventures dans les bas-fonds d’un monde criminel, Han Solo va faire la connaissance de son imposant futur copilote Chewbacca et croiser la route du charmant escroc Lando Calrissian… Ce voyage',
     genres: ['Action', 'Aventure', 'Science-Fiction'],
     year: 2018,
     rating: 6.6,
     imageId: 'solo-a-star-wars-story-poster',
     videoUrl: 'https://cinecake.xyz/movies/Solo-A-Star-Wars-Story.mp4'
+  },
+  {
+    id: 'star-wars-the-rise-of-skywalker',
+    title: 'Star Wars : L\'Ascension de Skywalker',
+    description: 'Environ un an après la mort de Luke Skywalker, la Résistance tente de survivre face au Premier Ordre.',
+    longDescription: 'Environ un an après la mort de Luke Skywalker, la Résistance tente de survivre face au Premier Ordre, désormais mené par un nouveau Suprême Leader, Kylo Ren. Une rumeur agite cependant toute la galaxie : l\'Empereur Palpatine serait de retour. Tandis que Rey s\'entraîne sous la houlette de la générale Leia Organa, Kylo Ren cherche à défier',
+    genres: ['Action', 'Aventure', 'Science-Fiction'],
+    year: 2019,
+    rating: 6.3,
+    imageId: 'star-wars-the-rise-of-skywalker-poster',
+    videoUrl: 'https://cinecake.xyz/movies/Star-Wars-Lascension-De-Skywalker.mp4'
   }
 ];
 
