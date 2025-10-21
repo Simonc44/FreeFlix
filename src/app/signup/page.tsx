@@ -46,7 +46,8 @@ export default function SignupPage() {
                 description: "Votre compte a été créé avec succès. Vous êtes maintenant connecté.",
             });
             router.push('/');
-        } catch (error: any) {
+        } catch (error: any)
+{
             console.error(error);
             let description = "Une erreur est survenue. Veuillez réessayer.";
             if (error.code === 'auth/email-already-in-use') {
