@@ -2,8 +2,7 @@
 
 **FreeFlix** est un prototype d'application web de streaming de films, conçu pour offrir une expérience utilisateur fluide, moderne et immersive. Ce projet met en œuvre une interface élégante, des fonctionnalités de recommandation intelligentes grâce à l'IA, et une gestion de contenu robuste.
 
-![FreeFlix Hero Section](https://i.imgur.com/example.png) 
-*(Note: Ceci est une image d'exemple. Remplacez-la par une capture d'écran de votre application.)*
+![FreeFlix Hero Section](https://github.com/Simonc44/FreeFlix/blob/main/freeflix.png?raw=true) 
 
 ---
 
