@@ -1,5 +1,7 @@
 # 🎬 FreeFlix - Plateforme de Streaming de Films Moderne
 
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 **FreeFlix** est un prototype d'application web de streaming de films, conçu pour offrir une expérience utilisateur fluide, moderne et immersive. Ce projet met en œuvre une interface élégante, des fonctionnalités de recommandation intelligentes grâce à l'IA, et une gestion de contenu robuste.
 
 ![FreeFlix Hero Section](https://github.com/Simonc44/FreeFlix/blob/main/freeflix.png?raw=true) 
