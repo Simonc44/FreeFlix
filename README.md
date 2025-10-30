@@ -71,3 +71,8 @@ Pour lancer le projet en local, suivez ces étapes :
 ## ⚖️ Avertissement
 
 FreeFlix est un **projet de démonstration** à des fins éducatives. Le contenu (films, affiches, descriptions) est utilisé à titre d'illustration. Aucune violation des droits d'auteur n'est intentionnelle. Nous ne détenons aucun droit sur le contenu présenté.
+
+## 🧾 Licence
+
+Ce projet est publié sous licence **MIT**.  
+Le code source peut être utilisé librement à des fins éducatives ou personnelles.  
