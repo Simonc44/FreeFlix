@@ -81,4 +81,4 @@ If you prefer encrypted communication, request the maintainer's PGP key in your 
 - **Primary contact:** `simon.chusseau@gmail.com` (maintainer)  
 - **Repo:** `https://github.com/Simonc44/FreeFlix`. :contentReference[oaicite:6]{index=6}
 
-_Last updated: YYYY-MM-DD_
+_Last updated: 30/10/2015
