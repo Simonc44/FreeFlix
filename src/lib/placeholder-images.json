@@ -1,0 +1,268 @@
+{
+  "placeholderImages": [
+    {
+      "id": "interstellar-hero",
+      "description": "Image de fond pour la section héros du film Interstellar",
+      "imageUrl": "https://images.unsplash.com/photo-1590372838604-8629c21345d2?q=80&w=2940&auto=format&fit=crop",
+      "imageHint": "space planet"
+    },
+    {
+      "id": "interstellar-poster",
+      "description": "Affiche du film Interstellar",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "imageHint": "space movie"
+    },
+    {
+      "id": "the-dark-knight-poster",
+      "description": "Affiche du film The Dark Knight : Le Chevalier noir",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/pyNXnq8QBWoK3b37RS6C3axwUOy.jpg",
+      "imageHint": "batman joker"
+    },
+    {
+      "id": "scream-poster",
+      "description": "Affiche du film Scream",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/9LfX3IBeByGdFkmkmNztKBr4nYv.jpg",
+      "imageHint": "horror movie"
+    },
+    {
+      "id": "space-jam-poster",
+      "description": "Affiche du film Space Jam",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/oAdHWUSnlpYy1oX31ujqrLcrnEX.jpg",
+      "imageHint": "bugs bunny"
+    },
+    {
+      "id": "gran-turismo-poster",
+      "description": "Affiche du film Gran Turismo",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/ozXWxrxC6LGI7LMKMCMjLzFzsyr.jpg",
+      "imageHint": "racing car"
+    },
+    {
+      "id": "rogue-one-a-star-wars-story-poster",
+      "description": "Affiche du film Rogue One : A Star Wars Story",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/obsGPyNOAwkQbLRQOHR6a21VT23.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "gladiator-poster",
+      "description": "Affiche du film Gladiator",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/5gJOu3t2QrznuJqjCG7FQDMI76t.jpg",
+      "imageHint": "roman gladiator"
+    },
+    {
+      "id": "matrix-poster",
+      "description": "Affiche du film Matrix",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/pEoqbqtLc4CcwDUDqxmEDSWpWTZ.jpg",
+      "imageHint": "sci fi"
+    },
+    {
+      "id": "titanic-poster",
+      "description": "Affiche du film Titanic",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/vpsvHLkoeKUjceIMeNSqCp3xEyY.jpg",
+      "imageHint": "ship romance"
+    },
+    {
+      "id": "top-gun-maverick-poster",
+      "description": "Affiche du film Top Gun : Maverick",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/uuwi4wwG6HAHVqaEvJDx6gI773N.jpg",
+      "imageHint": "jet fighter"
+    },
+    {
+      "id": "oppenheimer-poster",
+      "description": "Affiche du film Oppenheimer",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg",
+      "imageHint": "atomic bomb"
+    },
+    {
+      "id": "skyfall-poster",
+      "description": "Affiche du film Skyfall",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/nNFECkwmrYoUQ17EnPTcSlRictV.jpg",
+      "imageHint": "james bond"
+    },
+    {
+      "id": "zack-snyders-justice-league-poster",
+      "description": "Affiche du film Zack Snyder's Justice League",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/mIFKzh0tDIc6LPMJh88mNZ1yr8s.jpg",
+      "imageHint": "superhero team"
+    },
+    {
+      "id": "shazam-la-rage-des-dieux-poster",
+      "description": "Affiche du film Shazam! La Rage des Dieux",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/iz2V6Wc5eVVBbUqlTIkY4SrS5nW.jpg",
+      "imageHint": "superhero comedy"
+    },
+    {
+      "id": "space-jam-nouvelle-ere-poster",
+      "description": "Affiche du film Space Jam : Nouvelle Ère",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/wyXsGqicx9DoR2W6gaxU74NzTRo.jpg",
+      "imageHint": "basketball cartoon"
+    },
+    {
+      "id": "casino-royale-poster",
+      "description": "Affiche du film Casino Royale",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/1ST7phuvQsaAIIkRyAtESZFLMx9.jpg",
+      "imageHint": "james bond"
+    },
+    {
+      "id": "spectre-poster",
+      "description": "Affiche du film Spectre",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/AwCpcShhgRqoVPWhOzs4JiI4dlK.jpg",
+      "imageHint": "james bond"
+    },
+    {
+      "id": "mourir-peut-attendre-poster",
+      "description": "Affiche du film Mourir peut attendre",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/qseURFLjRBCqFCNCKmS2uwM9IOj.jpg",
+      "imageHint": "james bond"
+    },
+    {
+      "id": "star-wars-episode-i-the-phantom-menace-poster",
+      "description": "Affiche du film Star Wars, épisode I - La Menace fantôme",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/fpEC910v5DrMvZteRNlKzXeHiHY.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "saw-poster",
+      "description": "Affiche du film Saw",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/fgYiNJm9v7tSQFa2RA3QOVT66zN.jpg",
+      "imageHint": "horror mystery"
+    },
+    {
+      "id": "spider-man-across-the-spider-verse-poster",
+      "description": "Affiche du film Spider-Man : Across the Spider-Verse",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/ydaJsTyrRimSQ1dTf2xvrmJKz5b.jpg",
+      "imageHint": "spiderman animation"
+    },
+    {
+      "id": "spider-man-new-generation-poster",
+      "description": "Affiche du film Spider-Man : New Generation",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/7uPGS5CgvIjDcFUhw9HB9qYeDXf.jpg",
+      "imageHint": "spiderman animation"
+    },
+    {
+      "id": "free-guy-poster",
+      "description": "Affiche du film Free Guy",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/lG7Rv88OANLVbeR6Zymlid1cRuk.jpg",
+      "imageHint": "video game"
+    },
+    {
+      "id": "dragons-poster",
+      "description": "Affiche du film Dragons",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/515phfKCjq7zBEY2UoslEAoNgnW.jpg",
+      "imageHint": "viking dragon"
+    },
+    {
+      "id": "minecraft-le-film-poster",
+      "description": "Affiche du film Minecraft, le film",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/cq9z69AyIXeL2H14bqHE5ukm3M9.jpg",
+      "imageHint": "minecraft game"
+    },
+    {
+      "id": "f1-le-film-poster",
+      "description": "Affiche du film F1® Le Film",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/9i5VlOVWAQ8yTyCLNNVXa7hozUu.jpg",
+      "imageHint": "f1 racing"
+    },
+    {
+      "id": "dune-part-one-poster",
+      "description": "Affiche du film Dune : Première partie",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/qpyaW4xUPeIiYA5ckg5zAZFHvsb.jpg",
+      "imageHint": "sci-fi desert"
+    },
+    {
+      "id": "lilo-stitch-poster",
+      "description": "Affiche du film Lilo & Stitch",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/71IjwRa88OJMYJBntId7nn0eFHy.jpg",
+      "imageHint": "alien hawaii"
+    },
+    {
+      "id": "dune-part-two-poster",
+      "description": "Affiche du film Dune : Deuxième partie",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/dM2eC02Dq3iMtBZZDFtXSLHfFKJ.jpg",
+      "imageHint": "dune sequel"
+    },
+    {
+      "id": "lamour-ouf-poster",
+      "description": "Affiche du film L'Amour ouf",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/6akNNv4KyrguZUiG4uemfV6toVq.jpg",
+      "imageHint": "romance drama"
+    },
+    {
+      "id": "gladiator-ii-poster",
+      "description": "Affiche du film Gladiator II",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/6YhfdltefsvLvFOPDfATq1b5hE4.jpg",
+      "imageHint": "roman gladiator"
+    },
+    {
+      "id": "solo-a-star-wars-story-poster",
+      "description": "Affiche du film Solo: A Star Wars Story",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/oMCIfJMezZeJvLK124uj4T0BpAy.jpg",
+      "imageHint": "han solo"
+    },
+    {
+      "id": "star-wars-the-rise-of-skywalker-poster",
+      "description": "Affiche du film Star Wars : L'Ascension de Skywalker",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/1pQc75SdFOKpo2AqoL58z5kF3YI.jpg",
+      "imageHint": "star wars sequel"
+    },
+    {
+      "id": "star-wars-the-last-jedi-poster",
+      "description": "Affiche du film Star Wars : Les Derniers Jedi",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/pS80gMevVINVyrwEHrILOxqwdAY.jpg",
+      "imageHint": "star wars sequel"
+    },
+    {
+      "id": "star-wars-the-force-awakens-poster",
+      "description": "Affiche du film Star Wars : Le Réveil de la Force",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/zKZ1iF1ABqL7a16u6Im8JTQKp7H.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "star-wars-episode-iii-revenge-of-the-sith-poster",
+      "description": "Affiche du film Star Wars, épisode III - La Revanche des Sith",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/2RcBuU8cdxFxCJibbiYCGNLApfz.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "star-wars-episode-ii-attack-of-the-clones-poster",
+      "description": "Affiche du film Star Wars, épisode II - L'Attaque des clones",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/3nqpcTkODCBhuKuDQJ1dtRhgTqZ.jpg",
+      "imageHint": "star wars"
+    },
+    {
+      "id": "avengers-endgame-poster",
+      "description": "Affiche du film Avengers : Endgame",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/wF7jv3x51hXgkl7t5KHePuRjXc8.jpg",
+      "imageHint": "avengers superhero"
+    },
+    {
+      "id": "avengers-infinity-war-poster",
+      "description": "Affiche du film Avengers : Infinity War",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/hSfuKPtyEryeFzapZ8UgZd4aESu.jpg",
+      "imageHint": "avengers superhero"
+    },
+    {
+      "id": "harry-potter-and-the-sorcerers-stone-poster",
+      "description": "Affiche du film Harry Potter à l'école des sorciers",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/fbxQ44VRdM2PVzHSNajUseUteem.jpg",
+      "imageHint": "wizard boy"
+    },
+    {
+      "id": "harry-potter-and-the-chamber-of-secrets-poster",
+      "description": "Affiche du film Harry Potter et la Chambre des secrets",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/8KpHRokGpiaqEGpjYe0rpywtvUx.jpg",
+      "imageHint": "wizard school"
+    },
+    {
+      "id": "harry-potter-and-the-prisoner-of-azkaban-poster",
+      "description": "Affiche du film Harry Potter et le Prisonnier d'Azkaban",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/t4P2079IyK19njHDP2GwQrKdvzd.jpg",
+      "imageHint": "magic prisoner"
+    },
+    {
+      "id": "pourris-gates-poster",
+      "description": "Affiche du film Pourris gâtés",
+      "imageUrl": "https://www.themoviedb.org/t/p/original/iPQY2L6aBznm2iVv8v5qj673zsc.jpg",
+      "imageHint": "rich family"
+    }
+  ]
+}
